@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { WatchLiveComponent } from './watch-live.component';
+import { WatchChurchOnlineComponent } from './watch-church-online.component';
 
-describe('WatchLiveComponent', () => {
-  let component: WatchLiveComponent;
-  let fixture: ComponentFixture<WatchLiveComponent>;
+describe('WatchChurchOnlineComponent', () => {
+  let component: WatchChurchOnlineComponent;
+  let fixture: ComponentFixture<WatchChurchOnlineComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WatchLiveComponent ]
+      declarations: [ WatchChurchOnlineComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WatchLiveComponent);
+    fixture = TestBed.createComponent(WatchChurchOnlineComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
