@@ -6,7 +6,11 @@ import { GoogleMapsComponent } from './google-maps/google-maps.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, GoogleMapsComponent],
+  imports: [
+    CommonModule, 
+    RouterOutlet,
+    
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
+// const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
 @Component({
   selector: 'app-google-maps',
   templateUrl: './google-maps.component.html',
@@ -15,13 +15,13 @@ export class GoogleMapsComponent implements OnInit {
 
   async function initMap() {
     
-    let element:any = document.getElementById('map');
-    map = new
-    google.maps.Map(element, {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 8,
-      mapId: 'AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg'
-    });
+    // let element:any = document.getElementById('map');
+    // map = new
+    // google.maps.Map(element, {
+    //   center: {lat: -34.397, lng: 150.644},
+    //   zoom: 8,
+    //   mapId: 'AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg'
+    // });
   }
 
   initMap();
