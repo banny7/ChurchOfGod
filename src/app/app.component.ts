@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { GoogleMapsComponent } from './google-maps/google-maps.component';
+import { HeaderComponent } from './Core/Components/header/header.component';
+import { FooterComponent } from './Core/Components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { GoogleMapsComponent } from './google-maps/google-maps.component';
   imports: [
     CommonModule, 
     RouterOutlet,
-    
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
