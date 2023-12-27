@@ -1,0 +1,243 @@
+.leadershipContainer{
+    .header{
+        background-color: #000;
+        // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+        padding: 4rem 1rem;
+        .container{
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            max-width: 1280px;
+            .subContainer{
+                    position: relative;
+                    min-height: 1px;
+                    display: flex;
+                    @media (min-width: 768px)
+                        {
+                            width: 100%;
+                        }
+                  
+                        .container {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            max-width: 1300px;
+                             /* Adjust the maximum width as needed */
+                             .image {
+                                // width: 100%;
+                                // height: auto;
+                                display: block;
+                                width: 90px;
+                            }
+                            
+                            .text-overlay {
+                                position: absolute;
+                                top: 50%;
+                                left: 15%;
+                                transform: translate(-50%, -50%);
+                                color: #fff;
+                                text-transform: uppercase !important;
+                                font-family: termina,Sans-serif;
+                                font-size: 60px;
+                                font-weight: 600;
+                                letter-spacing: 5px;
+                                padding: 0;
+                                margin: 0;
+                                line-height: 1;
+                                @media (min-width: 768px)
+                                {
+                                    font-size: 40px;
+                                    left: 25%;
+                                }
+                                @media (min-width: 1024px)
+                                {
+                                    font-size: 40px;
+                                    left: 15%;
+                                }
+                            }
+                            .border{
+                                background-color: #fff;
+                                height: 5px;
+                                width: 100%;
+                                max-width: 400px;
+                                margin-left: 24rem;
+                            }
+                            }
+                            
+            }
+
+        }
+        h2{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-left: 15%;
+            letter-spacing: 3px;
+        }
+    }
+    .leadPastorContainer{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        margin-top: 5%;
+        .profile{
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            .profileImage{
+                img{
+                    width: 100%;
+                    border-style: solid;
+                    border-width: 16px;
+                }
+            }
+           
+        }
+        .designation{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            h3{
+                font-family: termina,Sans-serif;
+                font-size: 32px;
+                font-weight: 600;
+            }
+            h4{
+                font-size: 24px;
+                font-weight: 400;
+            }
+            button{
+                font-family: termina,Sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #000;
+                background-color: #fff;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 0 0 0 0;
+                padding: 12px 18px;
+            }
+        }
+    }
+    .subFooter{
+        background-color: #f5f5f5;
+        .backgroundImg{
+            height: 31px;
+            background-repeat: repeat-x;
+            background-position: bottom;
+            background-size: 497px;
+            background-image: url(https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/ig:avif/f:best/https://generation.church/wp-content/uploads/2021/11/pattern-white.svg);
+        
+        }
+        
+    }
+    .executiveTeamWrapper{
+        background-color: #f5f5f5;
+        margin-top: -36px;
+        h3{
+            font-family: termina,Sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 5%;
+        }
+        .teamList{
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            // max-width: 1280px;
+            .details{
+                position: relative;
+                min-height: 1px;
+                display: flex;
+                .memberContainer{
+                    position: relative;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    img{
+                        height: 300px;
+                        width: 260px;
+                        margin-right: 50px;
+                        object-fit: cover;
+                        aspect-ratio: 1/1;
+                        border-width: 10px;
+                        border-color: #000;
+                        border-style: solid;
+                        box-shadow: 10px 10px 0 #007BFF;
+                    }
+                    h6{
+                        font-family: termina,Sans-serif;
+                        font-size: 24px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                }
+            }
+            // @media (min-width: 768px)
+            //     {
+            //         display: grid;
+            //         grid-template-columns: repeat(4,minmax(0,1fr));
+            //     }
+       
+        }
+    }
+    .churchStaffsWrapper{
+        h3{
+            font-family: termina,Sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+        .staffDetails{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            .staffs{
+                img{
+                    height: 300px;
+                    width: 260px;
+                    margin-right: 50px;
+                    object-fit: cover;
+                    aspect-ratio: 1/1;
+                    border-width: 10px;
+                    border-color: #000;
+                    border-style: solid;
+                    box-shadow: 10px 10px 0 #007BFF;
+                }
+                h6{
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 32px;
+                    letter-spacing: 3px;
+                    text-align: center;
+                    margin: 20px;
+                }
+                p{
+                    text-align: center;
+                    color: #6a6565;
+                    font-family: league-gothic,Sans-serif;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+}
+
+
