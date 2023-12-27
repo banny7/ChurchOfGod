@@ -1,4 +1,9 @@
 $black: #212322;
+$blue : #007BFF;
+$white : white;
+$termina_font : "REM", sans-serif;
+$ibm_font : 'IBM Plex Mono', monospace; 
+
 .footerWrapper{
     display: flex;
     flex-direction: column;
@@ -12,43 +17,132 @@ $black: #212322;
         background-color:$black;
         margin-top: -3px;
         padding: 20px;
-       
+        height : 170px;
+        position: relative;
+        z-index: 1;
+        padding-top: 45px;
         .contactForm{
-            background-color: white;
+            background-color: $white;
             max-width: 900px;
             padding: 20px;
             margin: auto;
             h3{
                 font-size: 32px;
                 margin: auto;
-                font-family: Michroma;
+                font-family: $termina_font;
                 
                 margin-bottom: 20px;
             }
             .formFields{
                 display: flex;
                 flex-wrap: wrap;
+                align-items: center;
                 .formField{
                     width: 49%;
                     display: flex;
                     flex-direction: column;
                     margin-bottom: 20px;
+                    text-transform: uppercase;
                     &:nth-of-type(odd){
                         margin-right: 15px;
                     }
                     label{
-                        font-family: Michroma;
+                        font-family: $termina_font;
                         font-weight: 600;
                         margin-bottom: 10px;
                     }
                     input{
                         padding: 10px 10px;
-                        font-family: Michroma;
+                        font-family: $termina_font;
                         font-weight: 600;
+                        color: $white;
+                        transition: 0.4s;
+                        &:focus{
+                            background-color: $black;
+                            color: $white;
+                        }
                     }
                 }
                 .formAction{
-        
+                    color: $white;
+                    background: $black;
+                    width: 49%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-family: $termina_font;
+                    height: 40px;
+                    margin-top: 11px;
+                    transition: 0.4s;
+                    cursor: pointer;
+                    &:hover{
+                        background: $blue
+                    }
+                }
+            }
+        }
+    }
+    .footerInfo{
+        background: $black;
+        margin-top: 2px;
+        padding-top: 72px;
+        padding-bottom: 70px;
+        .detailWrapper{
+            border: 2px solid $white;
+            display: flex;
+            max-width: 1340px;
+            margin: auto;
+            margin-top: 40px;
+            .churchDetails{
+                border: 2px solid $white;
+                border-right-width: 0px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                &:first-of-type{
+                    border-left-width: 0px;
+                }
+                h3{
+                    color: $white;
+                    font-family: $termina_font;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                a{
+                    font-family: $ibm_font;
+                    color: $white;
+                    transition: color .3s;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        color : $blue;
+                    }
+
+                }
+                .quickLinks{
+                    display: flex;
+                    .quickLink{
+                        padding:10px;
+                        background-color: $white;
+                        border-radius: 50%;
+                        max-width: 20px;
+                        height: 20px;
+                        margin-right: 38px;
+                        transition: 0.4s;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: $blue;
+                        }
+                    }
+                }
+                hr{
+    
+                }
+                p{
+                    font-family: $ibm_font;
+                    color: $white;
                 }
             }
         }
