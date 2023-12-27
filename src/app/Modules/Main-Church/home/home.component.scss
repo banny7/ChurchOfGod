@@ -155,7 +155,7 @@
             align-items: center;
             width: 100%;
             h3{
-                font-family: termina,Sans-serif;
+                font-family: 'REM', sans-serif;
                 font-size: 32px;
                 font-weight: 600;
                 display:inline-flex;
@@ -234,7 +234,7 @@
                     background-color: #007BFF;
                 h3{
                     // mb-0 text-4xl font-bold uppercase font-heading
-                    font-family: termina,Sans-serif;
+                    font-family: 'REM', sans-serif;
                     font-size: 32px;
                     font-weight: 600;
                     text-transform: uppercase;
@@ -306,7 +306,7 @@
                         border: 2px solid #000;
                         border-radius: 3px;
                         text-align: center;
-                        font-family: termina,sans-serif;
+                        font-family: 'REM', sans-serif;
                         text-transform: uppercase;
 
                         @media (min-width: 640px)
@@ -394,7 +394,7 @@
                         text-transform: uppercase;
                         color: #000;
                         // font-size: 1.75rem;
-                        font-family: termina,Sans-serif;
+                        font-family: 'REM', sans-serif;
                         font-size: 32px;
                         font-weight: 600;
 
@@ -501,7 +501,7 @@
                             padding-left: 18px;
                             padding-right: 18px;
                             text-align: center;
-                            font-family: termina,sans-serif;
+                            font-family: 'REM', sans-serif;
                             text-transform: uppercase;
                             @media (min-width: 640px)
                             {
