@@ -16,4 +16,7 @@ export class HeaderComponent implements OnInit {
   navigateToLeaderShip(){
     this.route.navigateByUrl('/leadership');
   }
+  navigateToConnect(){
+    this.route.navigateByUrl('/connect');
+  }
 }
