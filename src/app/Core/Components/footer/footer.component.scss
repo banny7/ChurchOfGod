@@ -75,9 +75,11 @@ $ibm_font : 'IBM Plex Mono', monospace;
                     height: 40px;
                     margin-top: 11px;
                     transition: 0.4s;
+                    text-transform: uppercase;
                     cursor: pointer;
                     &:hover{
-                        background: $blue
+                        background: $blue;
+                        color: $black;
                     }
                 }
             }
@@ -118,6 +120,7 @@ $ibm_font : 'IBM Plex Mono', monospace;
                     cursor: pointer;
                     &:hover{
                         color : $blue;
+                        font-weight: 600;
                     }
 
                 }
@@ -131,14 +134,18 @@ $ibm_font : 'IBM Plex Mono', monospace;
                         height: 20px;
                         margin-right: 38px;
                         transition: 0.4s;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         cursor: pointer;
                         &:hover{
                             background-color: $blue;
+                            img{
+                                width: 110%;
+                            }
                         }
                     }
-                }
-                hr{
-    
                 }
                 p{
                     font-family: $ibm_font;
