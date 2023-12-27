@@ -1,3 +1,59 @@
-<p>
-  leadership works!
-</p>
+<div class="leadershipContainer">
+  <section class="header">
+    <div class="container">
+      <div class="subContainer">
+        
+        <div class="container">
+          <img src="../../../../assets/images/modules/main-church/home/star-icon.svg" alt="Your Image" class="image">
+          <div class="text-overlay">Leadership</div>
+          <div class="border"></div>
+      </div>
+        <div class="logo"></div>
+      </div>
+      
+    </div>
+    <h2>Meet Our Team</h2>
+  </section>
+
+  <section>
+    <div class="leadPastorContainer">
+      <div class="profile">
+        <div class="profileImage">
+          <img src="https://mlvggls1rius.i.optimole.com/w:800/h:713/q:90/f:best/https://generation.church/wp-content/uploads/2022/02/Visconti-2021-2-2.jpg" alt="">
+        </div>
+      </div>
+      <div class="designation">
+        <h3>Lead Pastors</h3>
+        <h4>Ryan & Amy Visconti</h4>
+        <button>Meet Ryan & Amy</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="subFooter">
+    <div class="backgroundImg"></div>
+  </section>
+  <div class="executiveTeamWrapper">
+    <h3>Executive Team</h3>
+    <div class="teamList">
+      <div class="details">
+        <div class="memberContainer" *ngFor="let team of executiveTeam">
+          <img [src]="team.image" alt="">
+          <h6>{{team.name}}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="churchStaffsWrapper">
+    <h3>Church Staff</h3>
+    <div class="staffDetails">
+      <div class="staffs" *ngFor="let staff of staffLists">
+        <img [src]="staff.image" alt="">
+        <h6>{{staff.name}}</h6>
+        <p>{{staff.role}}</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
