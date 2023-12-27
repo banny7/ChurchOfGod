@@ -1,10 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+$black: #212322;
+$blue : #007BFF;
+$white : white;
+$termina_font : "REM", sans-serif;
+$ibm_font : 'IBM Plex Mono', monospace; 
+$primary_font : 'League Gothic', sans-serif;
+
 *{
     font-family: 'League Gothic', sans-serif;
 }
-.remFont{
-    font-family: 'REM', sans-serif;
-}
+
 
 img{
     width: 100%;
