@@ -36,11 +36,11 @@
                       
                     }
                     .image {
-                        // width: 100%;
-                        // height: auto;
+                        margin-left: -36%;
                         display: block;
                         width: 90px;
                         margin-top: 40px;
+                       
                     }
                     .separator{
                         background-color: #007BFF;
@@ -48,20 +48,76 @@
                         width: 100%;
                         max-width: 100px;
                         margin-top: 80px;
-                        margin-left: 20px;
+                        margin-left: -30%;
                     }
+                    h2{
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        line-height: 1.3em;
+                        font-family: 'REM',Sans-serif;
+                        margin-left: 5%;
+                    }
+                   
                 }
+            
 
             @media (min-width: 768px)
                 {
                     width: 50%;
                 }
             }
+            .rightContainer{
+                width: 100%;
+                .imageContent{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    .imgDiv{
+                        padding: 2rem 0;
+                        img{
+                            width: 100%;
+                            height: 400px;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                    }
+                }
+                @media (min-width: 768px)
+                 {
+                    width: 50%;
+                } 
+            }
             @media (min-width: 767px)
                 {
                     grid-gap: 3rem;
                     flex-wrap: nowrap;
                 }
+        }
+    }
+    .midWrapper{
+        position: relative;
+        padding: 0 2rem;
+        .midConnectContainer{
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            max-width: 1400px;
+            grid-gap: 3rem;
+            .leftContent{
+             img{
+                width: 100%;
+                max-width: 276px;
+                opacity: .6;
+             }   
+            }
+            .rightContent{
+                
+            }
         }
     }
 }
