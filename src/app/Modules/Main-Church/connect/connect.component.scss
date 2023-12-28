@@ -100,7 +100,7 @@
     }
     .midWrapper{
         position: relative;
-        padding: 0 2rem;
+        padding: 4rem 2rem;
         .midConnectContainer{
             display: flex;
             margin-right: auto;
@@ -116,7 +116,77 @@
              }   
             }
             .rightContent{
-                
+                .dividerTop{
+                    border-style: solid;
+                    color: #007BFF;
+                    border-width: 6px;
+                    width: 300px;
+                }
+                .welcomePhrase{
+                    p{
+                        font-family: 'League Gothic', sans-serif;
+                        font-size: 58px;
+                        text-transform: uppercase;
+                        line-height: 1em;
+                        width: auto;
+                        max-width: auto;
+                    }
+                }
+            }
+        }
+    }
+    .programs{
+        background-color: #303131;
+        padding: 4rem 1rem;
+        position: relative;
+        .mainContainer{
+            max-width: 1400px;
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            .contentsWrapper{
+                display: flex;
+                margin-right: auto; 
+                margin-left: auto;
+                position: relative;
+                flex-wrap: wrap;
+                .content{
+                    position: relative;
+                    width: 30%;
+                    margin: 12px;
+                    
+                    .dividerTop{
+                        border-style: solid;
+                        color: #007BFF;
+                        border-width: 4px;
+                        width: 400px;
+                        @media (max-width: 768px)
+                            {
+                                width:100px
+                            }
+                    }
+                    h6{
+                        color: #fff;
+                        font-family: 'REM',Sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        color: #fff;
+                        font-size: 16px;
+                        font-family: 'REM',Sans-serif;
+                        text-align: justify;
+                        width: 82%
+   ;
+                    }
+                }
+            }
+            @media (min-width: 1025px)
+            {
+                grid-gap: 3rem;
+                flex-wrap: nowrap;
             }
         }
     }
