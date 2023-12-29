@@ -44,7 +44,7 @@
                     }
                     .separator{
                         background-color: #007BFF;
-                        height: 5px;
+                        height: 10px;
                         width: 100%;
                         max-width: 100px;
                         margin-top: 80px;
@@ -122,6 +122,13 @@
                     border-width: 6px;
                     width: 300px;
                 }
+                .dividerBottom{
+                    float: right;
+                    border-style: solid;
+                    color: #007BFF;
+                    border-width: 6px;
+                    width: 300px;
+                }
                 .welcomePhrase{
                     p{
                         font-family: 'League Gothic', sans-serif;
@@ -181,12 +188,46 @@
                         width: 82%
    ;
                     }
+                    p:last-of-type{
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                            font-family: "REM", Sans-serif;
+                        }
+                    }
                 }
             }
             @media (min-width: 1025px)
             {
                 grid-gap: 3rem;
                 flex-wrap: nowrap;
+            }
+        }
+        .imageContainer{
+            display: flex;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 0; 
+            width: 100%;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1400px;
+            height:300px;
+            .imgWrapper{
+                position: relative;
+                min-height: 1px;
+                display: flex;
+                max-width: 400px;
+                img{
+                   
+                }
+                
+            }
+            .imgEmpty{
+                width: 300px;
+                height:280px;
+                border: 10px solid #007BFF;
             }
         }
     }
