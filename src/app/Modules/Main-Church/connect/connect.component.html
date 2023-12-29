@@ -38,41 +38,38 @@
   <section class="programs">
     <div class="mainContainer">
       <div class="contentsWrapper">
-        <div class="content">
+        <div class="content" *ngFor="let content of contents; ">
           <div class="dividerTop"></div>
-          <h6>G101</h6>
-          <p>This is your next step! Learn about the mission, values, and vision of Generation Church. This is a 1-time class that will answer any questions you may have, introduce you to key leaders, and give you a tour. Be ALL IN for your church and get plugged in now!</p>
+          <h6>{{content.heading}}</h6>
+          <p>{{content.description}}</p>
+          <p><a href="">Learn More</a></p>
         </div>
-        <!-- 2 -->
-        <div class="content">
+       
+      </div>
+    </div>
+    <div class="imageContainer">
+      <div class="imgWrapper">
+        <img src="https://mlvggls1rius.i.optimole.com/w:768/h:512/q:90/f:best/https://generation.church/wp-content/uploads/2023/06/visit-mesa-church-worship-3.jpg" alt="">
+      </div>
+      <div class="imgEmpty">
+        <!-- Empty -->
+      </div>
+      <div class="imgWrapper">
+        <img src="https://mlvggls1rius.i.optimole.com/w:720/h:1080/q:90/f:best/https://generation.church/wp-content/uploads/2022/02/CWU2.jpg" alt="">
+      </div>
+      <div class="imgWrapper">
+        <img src="https://mlvggls1rius.i.optimole.com/w:720/h:1080/q:90/f:best/https://generation.church/wp-content/uploads/2023/07/visit-south-mountain-church-lobby-2.jpg" alt="">
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="contentsWrapper">
+        <div class="content" *ngFor="let content of contents; ">
           <div class="dividerTop"></div>
-          <h6>G101</h6>
-          <p>This is your next step! Learn about the mission, values, and vision of Generation Church. This is a 1-time class that will answer any questions you may have, introduce you to key leaders, and give you a tour. Be ALL IN for your church and get plugged in now!</p>
+          <h6>{{content.heading}}</h6>
+          <p>{{content.description}}</p>
+          <p><a href="">Learn More</a></p>
         </div>
-        <!-- 3 -->
-        <div class="content">
-          <div class="dividerTop"></div>
-          <h6>G101</h6>
-          <p>This is your next step! Learn about the mission, values, and vision of Generation Church. This is a 1-time class that will answer any questions you may have, introduce you to key leaders, and give you a tour. Be ALL IN for your church and get plugged in now!</p>
-        </div>
-        <!-- 4 -->
-        <div class="content">
-          <div class="dividerTop"></div>
-          <h6>G101</h6>
-          <p>This is your next step! Learn about the mission, values, and vision of Generation Church. This is a 1-time class that will answer any questions you may have, introduce you to key leaders, and give you a tour. Be ALL IN for your church and get plugged in now!</p>
-        </div>
-        <!-- 5 -->
-        <div class="content">
-          <div class="dividerTop"></div>
-          <h6>G101</h6>
-          <p>This is your next step! Learn about the mission, values, and vision of Generation Church. This is a 1-time class that will answer any questions you may have, introduce you to key leaders, and give you a tour. Be ALL IN for your church and get plugged in now!</p>
-        </div>
-        <!-- 6 -->
-        <div class="content">
-          <div class="dividerTop"></div>
-          <h6>G101</h6>
-          <p>This is your next step! Learn about the mission, values, and vision of Generation Church. This is a 1-time class that will answer any questions you may have, introduce you to key leaders, and give you a tour. Be ALL IN for your church and get plugged in now!</p>
-        </div>
+       
       </div>
     </div>
   </section>
