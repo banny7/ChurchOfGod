@@ -1,8 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { YoutubeService } from './youtube.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { SharedModule } from '../../../Shared/Shared.module';
 
 @Component({
   selector: 'app-live-streaming',
@@ -10,7 +11,7 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
   styleUrls: ['./live-streaming.component.scss'],
   standalone : true,
   imports : [ 
-    CommonModule , 
+    SharedModule , 
     HttpClientModule,
     
   ],

@@ -1,12 +1,13 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, HostListener, OnInit } from '@angular/core';
+import { SharedModule } from '../../../Shared/Shared.module';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   standalone : true,
-  imports : [CommonModule]
+  imports : [ SharedModule]
 })
 export class HomeComponent implements OnInit {
 

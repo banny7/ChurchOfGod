@@ -1,0 +1,51 @@
+$black: #212322;
+$blue : #007BFF;
+$white : white;
+$termina_font : "REM", sans-serif;
+$ibm_font : 'IBM Plex Mono', monospace; 
+$primary_font : 'League Gothic', sans-serif;
+$page_width : 1300px;
+
+.sectionWrapper{
+    background-color: $black;
+    padding: 62px  0px;
+    .sectionHeader{
+        max-width: 1300px;
+        margin: auto;
+        display: flex;
+        background-image: url(/assets/images/modules/main-church/home/star-icon.svg);
+        background-repeat: no-repeat;
+        background-size: 90px;
+        background-position: left top;
+        align-items: center;
+        
+        .title{
+            width: 100%;
+            padding-left: 26px;
+            max-width: 495px;
+            h3, p{
+                font-family: $termina_font;
+                font-weight: 600;
+                text-transform: uppercase; 
+                color: $white;
+                transform: scaleX(1.2);
+                transform-origin: 0;
+                margin: 0px;
+            }
+            h3{
+                font-size: 59px;
+                margin-bottom: 10px;
+                margin-top: 7px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        hr{
+            color: $white;
+            width: 100%;
+            height: 2px;
+            background: white;
+        }
+    }
+}

@@ -1,12 +1,14 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
+import { SharedModule } from '../../../Shared/Shared.module';
+import { SectionHeaderComponent } from '../../../Shared/Components/section-header/section-header.component';
 
 @Component({
   selector: 'app-leadership',
   templateUrl: './leadership.component.html',
   styleUrls: ['./leadership.component.scss'],
   standalone:true,
-  imports:[CommonModule]
+  imports:[ SharedModule]
 })
 export class LeadershipComponent implements OnInit {
  executiveTeam=[
