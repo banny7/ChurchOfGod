@@ -1,0 +1,43 @@
+$black: #212322;
+$blue : #007BFF;
+$white : white;
+$termina_font : "REM", sans-serif;
+$ibm_font : 'IBM Plex Mono', monospace; 
+$primary_font : 'League Gothic', sans-serif;
+$page_width : 1300px;
+.founderContainer{
+    display: flex;
+    max-width: $page_width;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+    align-items: start;
+    img{
+        max-width: 450px;
+        margin-right: 30px;
+    }
+    .founder{
+        width: 100%;
+        .title{
+            font-family: $termina_font;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        hr{
+            border: solid 3px $blue;
+            max-width: 200px;
+            margin: 0px;
+            margin-top: 10px;
+        }
+        p{
+            font-family: $termina_font;
+            font-weight: 200;
+            line-height: 1.7;
+            i,b{
+                font-family: $termina_font;
+                color : $blue;
+                font-weight: 400;
+            }
+        }
+    }
+}

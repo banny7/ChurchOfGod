@@ -483,11 +483,13 @@ $page_width : 1300px;
                     }
                     .subContent{
                         margin-left: 1.5rem;
+                        filter: grayscale(1);
                         img{
                             object-fit: cover;
                             max-width: 900px;
                             width: 100%;
                             aspect-ratio: 16/9;
+                            object-position: -61px;
                         }
                         @media (min-width: 768px)
                         {
