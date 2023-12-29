@@ -1,25 +1,17 @@
 <div class="headerWrapper">
   <div class="header">
-    <img src="/assets/images/core/header/logo.png" alt=""  (click)="navigateToHome()">
+    <img src="/assets/images/core/header/logo.png" alt=""  (click)="navigateTo('/')">
     <div class="menuItems">
-      <div class="menuItem">
-        What We Believe
-      </div>
-      <div class="menuItem" (click)="navigateToLeaderShip()">
-        Leadership
-      </div>
-      <div class="menuItem">
-        Our Story
-      </div>
-      <div class="menuItem">
-        Visit
-      </div>
-      <div class="menuItem" (click)="navigateToConnect()">
-        Connect
+      <div 
+        *ngFor="let page of pages "
+        class="menuItem" 
+        (click)="navigateTo(page.name)"
+      >
+        {{page.title}}
       </div>
     </div>
-    <div class="primaryActions"  (click)="navigateToLiveStreaming()">
+    <a class="primaryActions"  href="https://www.youtube.com/watch?v=qz9VxIP_2Pk">
       Watch Live
-    </div>
+    </a>
   </div>
 </div>

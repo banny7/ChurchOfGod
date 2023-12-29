@@ -4,6 +4,10 @@
       <h3>{{title}}</h3>
       <p>{{description}}</p>
     </div>
-    <hr>
+    <div class="image">
+      <img [src]="image" alt="" *ngIf="image">
+      <hr *ngIf="!image">
+    </div>
+    
   </div>
 </div>

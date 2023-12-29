@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SectionHeaderComponent implements OnInit {
   @Input() title:any;
   @Input() description:any;
+  @Input() image:any;
   constructor() { }
 
   ngOnInit() {
