@@ -13,10 +13,17 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+  navigateToHome(){
+    this.route.navigateByUrl('');
+  }
   navigateToLeaderShip(){
     this.route.navigateByUrl('/leadership');
   }
   navigateToConnect(){
     this.route.navigateByUrl('/connect');
+  }
+  navigateToLiveStreaming(){
+    this.route.navigateByUrl('/watch-live');
+
   }
 }

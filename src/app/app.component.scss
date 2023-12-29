@@ -1,0 +1,21 @@
+.tempLoader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    img{
+        width: 40dvw;
+        margin-bottom: 40px;
+    }
+
+    h3{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    p{
+        margin: 5px;
+        
+        font-size: 40px;
+    }
+}

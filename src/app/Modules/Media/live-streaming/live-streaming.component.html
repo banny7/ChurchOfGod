@@ -1,3 +1,18 @@
-<p>
-  live-streaming works!
-</p>
+<div class="liveSteamingWrapper">
+  <div class="player">
+    <iframe id="existing-iframe-example"
+            width="640" height="360"
+            [src]="url"
+            frameborder="0"
+            style="border: solid 4px #37474F"
+    ></iframe>
+  </div>
+  <div class="videoPlayerWrapper">
+    <div class="videoPlayer" *ngFor="let video of videos">
+      <h3>{{video.snippet.title}}</h3>
+      <p>{{video.snippet.description}}</p>
+      <img [src]="video.snippet.thumbnails.high.url" alt="">
+      
+    </div>
+  </div>
+</div>

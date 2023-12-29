@@ -1,35 +1,53 @@
+$black: #212322;
+$blue : #007BFF;
+$white : white;
+$termina_font : "REM", sans-serif;
+$ibm_font : 'IBM Plex Mono', monospace; 
+$primary_font : 'League Gothic', sans-serif;
+$page_width : 1300px;
 .mainContainer{
-    
     .header{
-     
         .space{
             height: 3rem; 
         }
         .heading{
             display: flex;
             align-items: center;
-            justify-content: center;
+            max-width: $page_width;
+            margin: auto;
+            padding-left: 5px;
             h1{
-                letter-spacing: 12px;
                 font-size: 60px;
                 font-weight: 600;
                 text-transform: uppercase;
                 line-height: 1;
+                width: 100%;
+                max-width: 540px;
+                font-family: $termina_font;
             }
             .border{
                 background-color: black;
-                height: 5px;
+                height: 3px;
                 width: 100%;
-                max-width: 400px;
+                // max-width: 400px;
                 margin-left: 2rem;
             }
         }
         .latestMsgContainer{
+            display: flex;
             margin-left: auto;
             margin-right: auto;
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
+            /* padding-left: 0.75rem; */
+            /* padding-right: 0.75rem; */
+            max-width: $page_width;
+            padding-top: 40px;
+            background: url(/assets/images/modules/main-church/home/star-icon.svg);
+            background-repeat: no-repeat;
+            background-position: top left;
+            
+            width: 100%;
             .wrapper{
+                padding: 0px 40px;
                 position: relative;
                 .subContainer{
                     position: relative;
@@ -38,11 +56,13 @@
                         text-transform: uppercase;
                         font-size: 1.125rem;
                         line-height: 1.75rem;
-                        margin-bottom: 0.5rem;
-                        letter-spacing: 4px;
+                        margin-bottom: 9px;
+                        letter-spacing: 1px;
                         margin-left: 16px;
+                        font-family: $termina_font;
                         span{
                             font-weight: 700;
+                            font-family: $termina_font;
                         }
                     }
                     a{
@@ -50,10 +70,36 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        
+                        transition: 1s;
+                        margin-top: 10px;
+                        img{
+                            filter: brightness(.75);
+                            transition: 1s;
+                        }
                         svg{
                             position: absolute;
                             z-index: 10;
+                            transition: 1s;
+                            zoom: 1;
+                            rect{
+                                transition: 1s;
+                                fill: $white;
+                            }
                         }
+                        &:hover{
+                            img{
+                                filter: brightness(1);
+                            }
+                            margin-top: 0px;
+                            svg {
+                                zoom: 1.1;
+                                rect{
+                                    fill: $blue;
+                                }
+                            }
+                        }
+                        
                     }
                     
                 }
@@ -82,12 +128,12 @@
                     border-top-width: 1px;
                     position: relative;
                     &.top{
-                        background-color: #007BFF;
-                        border-color: black;
+                        background-color: black;
+                        color: #fff;
                     }
                     &.bottom{
-                    background-color: black;
-                    color: #fff;
+                        border-color: black;
+                        background-color: #007BFF;
                     }
                     .marquee,.marqueeBottom {
                         height: 25px;
@@ -131,72 +177,88 @@
         }  
     }
     .missionWrapper{
-        // relative flex flex-col items-center justify-between pt-20 pb-10 md:py-24 lg:flex-row intro
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      .missionContainer{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background-image: url(/assets/images/modules/main-church/home/jesus_background.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position: center;
+      .missionContainer{
+        position: relative; 
         display: grid;
-        gap: 4rem;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: .75rem;
-        padding-right: .75rem;
+        padding-right: 0.75rem;
         width: 100%;
+        max-width: 1400px;
+        display: flex;
+        margin: auto;
+        padding-left: 40px;
+        min-height: 400px;
+        // align-items: center;
         .missionHeader{
             position: relative;
             z-index: 10;
             display: flex;
             align-items: center;
             width: 100%;
+            max-width: 600px;
+            height: 37px;
+            margin-top: 10px;
             h3{
                 font-family: 'REM', sans-serif;
                 font-size: 32px;
                 font-weight: 600;
-                display:inline-flex;
-                flex: 1 1 auto;
+                text-transform: uppercase;
                 width: 100%;
                 margin-right: .5rem;
-                text-transform: uppercase;
+                max-width: 231px;
+                margin: 0px;
             }
             .line{
                 background-color:#007BFF;
-                height: 10px;
+                height: 5px;
                 width: 100%;
-                
-                
+                max-width: 300px;
             }
         }
         .missionText{
             position: relative;
             z-index: 10;
-        }
-        img{
-            position: absolute;
-            width: 66.666667%;
-            @media (min-width: 768px)
-            {
-                top: auto;
-            }
-            @media (min-width: 640px)
-            {
-                top: -2rem;
+            width: 100%;
+            h4{
+                font-size: 71px;
+                text-transform: uppercase;
+                font-weight: 200;
+                line-height: 0.9;
+                margin: 0px;
             }
         }
-        @media (min-width: 1024px)
-        {
-            max-width: 1024px;
-        }
-        @media (min-width: 768px)
-        {
-            max-width: 768px;
-         grid-template-columns: repeat(2,minmax(0,1fr));
-        }
+        // img{
+        //     position: absolute;
+        //     width: 66.666667%;
+        //     @media (min-width: 768px)
+        //     {
+        //         top: auto;
+        //     }
+        //     @media (min-width: 640px)
+        //     {
+        //         top: -2rem;
+        //     }
+        // }
+        // @media (min-width: 1024px)
+        // {
+        //     max-width: 1024px;
+        // }
+        // @media (min-width: 768px)
+        // {
+        //     max-width: 768px;
+        //  grid-template-columns: repeat(2,minmax(0,1fr));
+        // }
        
       }
       @media (min-width: 768px)
@@ -214,7 +276,7 @@
         .visitContainer{
             margin-left: auto;
             margin-right: auto;
-            max-width: 1280px;
+            max-width: $page_width;
           .subVisitContainer{
             
             position: relative;
@@ -247,11 +309,13 @@
                 
                 }
                 .rightGrid{
+                    filter: grayscale(1);
                     img{
                         object-fit: cover;
                         width: 100%; 
                         height: 100%;  
                         max-height: 416px;
+                        object-position: -34px 0px;
                         @media (min-width: 1024px)
                         {
                             aspect-ratio: 1/1;
@@ -263,10 +327,11 @@
                    
                    display: none;
                    img{
-                    object-fit: cover;
+                        object-fit: cover;
                         width: 100%; 
                         height: 100%;  
                         max-height: 416px;
+                        object-position: -100px 0px;
                         @media (min-width: 1024px)
                         {
                             aspect-ratio: 1/1;
@@ -293,11 +358,6 @@
                         line-height: 1.25rem;
                         margin-bottom: 1.5rem;
                         font-family: 'IBM Plex Mono',monospace;
-
-
-
-
-
                     }
                     a{
                         color: #000;
@@ -308,7 +368,10 @@
                         text-align: center;
                         font-family: 'REM', sans-serif;
                         text-transform: uppercase;
-
+                        &:hover{
+                            background-color: $black;
+                            color: $white;
+                        }
                         @media (min-width: 640px)
                             {
                                 padding-top: 6px!important;
@@ -327,6 +390,7 @@
                         width: 100%; 
                         height: 100%;  
                         max-height: 416px;
+                        object-position: -82px;
                         @media (min-width: 1024px)
                         {
                             aspect-ratio: 1/1;
@@ -345,6 +409,8 @@
                         width: 100%; 
                         height: 100%;  
                         max-height: 416px;
+                        filter: grayscale(1);
+                        object-position: -113px;
                         @media (min-width: 1024px)
                         {
                             aspect-ratio: 1/1;
@@ -355,15 +421,15 @@
                         display: inline-block;
                     }
                 }
-
+                @media (min-width: 640px) and (max-width: 767px)
+                {
+                    grid-template-columns: repeat(2,minmax(0,1fr));
+                }
                 @media (min-width: 768px)
                 {
                     grid-template-columns: repeat(3,minmax(0,1fr));
                 }
-                @media (min-width: 640px)
-                {
-                    grid-template-columns: repeat(2,minmax(0,1fr));
-                }
+                
             }
           }  
         }
@@ -378,8 +444,11 @@
             padding-right: .75rem;
             display: flex;
             flex-direction: column-reverse;
+            max-width: $page_width;
+            align-items: center;
             .watchSubContainer{
                 position: relative;
+                width: 100%;
                 .watchSection{
                     position: relative;
                     z-index: 10;
@@ -397,28 +466,8 @@
                         font-family: 'REM', sans-serif;
                         font-size: 32px;
                         font-weight: 600;
-
-                        .subContent{
-                            margin-left: 1.5rem;
-                            img{
-                                object-fit: cover;
-                                max-width: 900px;
-                                width: 100%;
-                                aspect-ratio: 16/9;
-                            }
-                            @media (min-width: 768px)
-                            {
-                                margin-right: 0;
-                                margin-left: 0;
-                            }
-                            @media (min-width: 640px)
-                                {
-                                    margin-right: -3rem;
-                                    margin-top: 2.5rem;
-                                }
-  
-
-                        }
+                        max-width: 700px;
+                        
                         @media (min-width: 768px)
                             {
                                 position: absolute;
@@ -431,6 +480,27 @@
                                 line-height: 1!important;
                             }
  
+                    }
+                    .subContent{
+                        margin-left: 1.5rem;
+                        img{
+                            object-fit: cover;
+                            max-width: 900px;
+                            width: 100%;
+                            aspect-ratio: 16/9;
+                        }
+                        @media (min-width: 768px)
+                        {
+                            margin-right: 0;
+                            margin-left: 0;
+                        }
+                        @media (min-width: 640px)
+                            {
+                                margin-right: -3rem;
+                                margin-top: 2.5rem;
+                            }
+
+
                     }
                     @media (min-width: 640px)
                         {
@@ -446,6 +516,7 @@
                     display: flex;
                     flex-direction: column;
                     margin-top: 1.5rem;
+                    padding-right: 50px;
                     .join{
                         margin-right: 1rem;
                         flex: 1 1 auto;
@@ -453,24 +524,26 @@
                             display: inline-block;
                             width: 100%;
                             text-transform: uppercase;
-                            font-size: 1.25rem;
+                            font-size: 40px;
                             line-height: 1.75rem;
-                            @media (min-width: 1024px)
-                             {
-                                font-size: 1.875rem;
-                                line-height: 2.25rem;
-                            }
-                            @media (min-width: 768px)
-                            {
-                                font-size: 1.5rem;
-                                line-height: 2rem;
-                            }
+                            font-family: $termina_font;
+                            font-weight: 200;
+                            font-size: 28px;
+                            // @media (min-width: 1024px)
+                            //  {
+                            //     font-size: 1.875rem;
+                            //     line-height: 2.25rem;
+                            // }
+                            // @media (min-width: 768px)
+                            // {
+                            //     font-size: 1.5rem;
+                            //     line-height: 2rem;
+                            // }
                         }
                         span:last-of-type{
                             display: inline-block;
                             margin-top: .25rem;
                             width: 100%;
-                            font-family: league-gothic,sans-serif;
                             font-size: 1.5rem;
                             line-height: 2rem;
                             @media (min-width: 768px)
@@ -487,22 +560,23 @@
                         margin-top: 1.5rem;
                         min-width: 8rem;
                         a{
-                            
                             background-color: transparent;
-                            text-decoration: none;
-                            color: #000;
-                            text-transform: uppercase;
-                            display: inline-block;
                             border-width: 2px;
-                            
                             border-color: rgb(33 35 34);
-                            padding-top: 10px;
-                            padding-bottom: 10px;
-                            padding-left: 18px;
-                            padding-right: 18px;
+                            color: #000;
+                            display: inline-block;
+                            text-decoration: none;
+                            border: 2px solid #000;
+                            border-radius: 3px;
                             text-align: center;
-                            font-family: 'REM', sans-serif;
+                            font-family: "REM", sans-serif;
                             text-transform: uppercase;
+                            transition: 0.4s;
+                            margin-bottom: 10px;
+                            &:hover{
+                                background-color: $black;
+                                color: $white;
+                            }
                             @media (min-width: 640px)
                             {
                                 padding-left: 14px!important;
@@ -535,24 +609,27 @@
                 }
                 .watchBox{
                     position: absolute;
-                    top: 0;
+                    top: -30px;
                     left: 0;
                     height: 50%;
-                    width: 100%;
+                    // width: 100%;
                     background-color: rgb(229 229 229 );
-                    
-
-                    @media (min-width: 1024px)
-                    {
-                        width: 50%;
-                    }
-                    @media (min-width: 768px)
-                    {
-                        width: 75%;
-                        top: -1rem;
-                    }
-
+                    width: 495px;
                 }
+        }
+        .rotatingMessage{
+            width: 100%;
+            max-width: 400px;
+            height: 400px;
+            background-image: url(/assets/images/modules/main-church/home/circular-image.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 60px;
+            }
         }
         .rightLogo{
             position: relative;

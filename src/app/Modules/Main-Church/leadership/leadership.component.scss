@@ -89,7 +89,12 @@
             display: flex;
             flex-wrap: wrap;
             align-content: flex-start;
+            width: 100%;
+            max-width: 400px;
+            padding: 0px 20px;
             .profileImage{
+                max-width: 400px;
+                margin: auto;
                 img{
                     width: 100%;
                     border-style: solid;
@@ -104,7 +109,9 @@
             align-content: center;
             align-items: center;
             justify-content: center;
-            width: 40%;
+            width: 100%;
+            padding: 40px;
+            max-width: 250px;
             h3{
                 font-family: 'REM', sans-serif;
                 font-size: 32px;

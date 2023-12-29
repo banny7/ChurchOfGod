@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   standalone : true
 })
 export class FooterComponent implements OnInit {
-
+  number:string = "9447266578";
   constructor() { }
 
   ngOnInit() {
   }
-
+  copyNumber(){
+    navigator.clipboard.writeText(this.number)
+    .then(() => {
+      alert('Phone number copied to clipboard');
+    })
+    .catch((err) => console.error(err.name, err.message));
+  }
 }

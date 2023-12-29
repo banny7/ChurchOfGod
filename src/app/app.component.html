@@ -1,4 +1,10 @@
-<div class="Container">
+<div class="tempLoader" *ngIf="!countdownEnded">
+  <img src="/assets/images/core/header/logo.png" alt="">
+  <!-- <h3>New Website Coming Soon</h3> -->
+  <p>New Website going live in</p>
+  <p>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ remainingSeconds }} seconds</p>
+</div>
+<div class="Container" *ngIf="countdownEnded">
   <app-header></app-header>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
