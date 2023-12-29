@@ -36,11 +36,11 @@
                       
                     }
                     .image {
-                        // width: 100%;
-                        // height: auto;
+                        margin-left: -36%;
                         display: block;
                         width: 90px;
                         margin-top: 40px;
+                       
                     }
                     .separator{
                         background-color: #007BFF;
@@ -48,20 +48,146 @@
                         width: 100%;
                         max-width: 100px;
                         margin-top: 80px;
-                        margin-left: 20px;
+                        margin-left: -30%;
                     }
+                    h2{
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        line-height: 1.3em;
+                        font-family: 'REM',Sans-serif;
+                        margin-left: 5%;
+                    }
+                   
                 }
+            
 
             @media (min-width: 768px)
                 {
                     width: 50%;
                 }
             }
+            .rightContainer{
+                width: 100%;
+                .imageContent{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    .imgDiv{
+                        padding: 2rem 0;
+                        img{
+                            width: 100%;
+                            height: 400px;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                    }
+                }
+                @media (min-width: 768px)
+                 {
+                    width: 50%;
+                } 
+            }
             @media (min-width: 767px)
                 {
                     grid-gap: 3rem;
                     flex-wrap: nowrap;
                 }
+        }
+    }
+    .midWrapper{
+        position: relative;
+        padding: 4rem 2rem;
+        .midConnectContainer{
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            max-width: 1400px;
+            grid-gap: 3rem;
+            .leftContent{
+             img{
+                width: 100%;
+                max-width: 276px;
+                opacity: .6;
+             }   
+            }
+            .rightContent{
+                .dividerTop{
+                    border-style: solid;
+                    color: #007BFF;
+                    border-width: 6px;
+                    width: 300px;
+                }
+                .welcomePhrase{
+                    p{
+                        font-family: 'League Gothic', sans-serif;
+                        font-size: 58px;
+                        text-transform: uppercase;
+                        line-height: 1em;
+                        width: auto;
+                        max-width: auto;
+                    }
+                }
+            }
+        }
+    }
+    .programs{
+        background-color: #303131;
+        padding: 4rem 1rem;
+        position: relative;
+        .mainContainer{
+            max-width: 1400px;
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            .contentsWrapper{
+                display: flex;
+                margin-right: auto; 
+                margin-left: auto;
+                position: relative;
+                flex-wrap: wrap;
+                .content{
+                    position: relative;
+                    width: 30%;
+                    margin: 12px;
+                    
+                    .dividerTop{
+                        border-style: solid;
+                        color: #007BFF;
+                        border-width: 4px;
+                        width: 400px;
+                        @media (max-width: 768px)
+                            {
+                                width:100px
+                            }
+                    }
+                    h6{
+                        color: #fff;
+                        font-family: 'REM',Sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        color: #fff;
+                        font-size: 16px;
+                        font-family: 'REM',Sans-serif;
+                        text-align: justify;
+                        width: 82%
+   ;
+                    }
+                }
+            }
+            @media (min-width: 1025px)
+            {
+                grid-gap: 3rem;
+                flex-wrap: nowrap;
+            }
         }
     }
 }
