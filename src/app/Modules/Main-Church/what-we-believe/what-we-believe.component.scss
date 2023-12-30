@@ -1,0 +1,107 @@
+$black: #212322;
+$blue : #007BFF;
+$white : white;
+$termina_font : "REM", sans-serif;
+$ibm_font : 'IBM Plex Mono', monospace; 
+$primary_font : 'League Gothic', sans-serif;
+$page_width : 1300px;
+.missionContainer{
+    margin: 5rem;
+    .missionWrapper{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+        .dividerTop{
+            
+            border-style: solid;
+            color: #007BFF;
+            border-width: 6px;
+            width: 300px;
+        }
+        .header{
+            margin: 0 auto;
+            padding: 1rem;
+            max-width: fit-content;
+            width: auto;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            font-family: $termina_font;
+        }
+        p{
+            font-family: $primary_font;
+            font-size: 58px;
+            text-transform: uppercase;
+            line-height: 1em;   
+        }
+        span{
+            font-family:$primary_font;
+            font-size: 48px;
+            text-transform: uppercase;
+            line-height: .5em;
+        }
+    }
+    .sections{
+      .sectionContainer{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+        .leftSection{
+            display: flex;
+            .icon{
+                img{
+                    width: 25px;
+                }
+            }
+            .text{
+                font-size: 16px;
+                font-family: $primary_font;
+                p:first-of-type{
+                    
+                    font-weight: 600;
+                    margin: 0
+                }
+                p:last-of-type{
+                    font-weight: 500;
+                }
+            }
+            
+        }
+      }  
+    }
+    .dividerBottom{
+         float: right;   
+        border-style: solid;
+        color: #007BFF;
+        border-width: 6px;
+        width: 300px;
+    }
+}
+.ourBeliefs{
+    background-color:#212322;
+    padding: 4rem 1rem;
+    position: relative;
+    .ourBeliefsWrapper{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        max-width: 1400px;
+        img{
+            max-width: 600px;
+        }
+        .rightSection
+        {
+            position: relative;
+            min-height: 1px;
+            display: flex;
+            h3{
+                color: #fff;
+                font-family: $termina_font;
+                font-size: 32px;
+                font-weight: 600;
+            }
+        }
+    }
+}
