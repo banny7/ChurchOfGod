@@ -5,8 +5,11 @@ $black : #212322;
     border-color: $black;
     .header{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         max-width: 1300px;
         margin: auto;
+        margin-right: 25px;
         *{
             transition: 0.4s;
         }
@@ -59,6 +62,125 @@ $black : #212322;
                 color: white;
             }
             padding: 10px;
+            @media (max-width:768px) {
+                display: none !important;
+            }
         }
+        .hamburgerMenu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+      
+            .bar {
+              background-color: $black;
+              height: 3px;
+              width: 25px;
+              margin: 3px 0;
+              transition: 0.4s;
+            }
+          }
+          @media (max-width: 768px) {
+            .menuItems {
+              display: none;
+              flex-direction: column;
+              align-items: center;
+              position: absolute;
+              top: 60px;
+              left: 0;
+              right: 0;
+              background-color: #fff;
+              border: 1px solid $black;
+      
+              .menuItem {
+                padding: 10px;
+              }
+            }
+      
+            .hamburgerMenu {
+              display: flex;
+            }
+          }
+      
     }
 }
+.hidden-menu {
+    display: none;
+  }
+  .sideNavbar {
+    width: 750px; /* Set the width of your side navbar */
+    height: 0; /* Initially set height to 0 */
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+    left: 0; /* Position at the top when closed */
+    background-color: #fff; /* Set the background color */
+    overflow: hidden; /* Hide content that overflows the height */
+    transition: height 0.3s ease; /* Add a transition for smooth animation */
+    .primaryAction{
+        background: #007BFF;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 19px;
+        margin-left: auto;
+        margin-right: 5px;
+        cursor: pointer;
+        color:  white;
+        text-decoration: none;
+        &:hover{
+            background-color: $black;
+            color: white;
+        }
+        padding: 10px;
+      
+    }
+}
+  
+  .sideNavbar.open {
+    height: 80%; /* Expand to full height when 'open' class is present */
+  }
+  .sideNavbar .primaryActions {
+    display: block; /* Display the Watch Live link within the side navbar */
+  }
+
+    .menuItem{
+        font-size: 19px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+            background-color: $black;
+            color: white;
+        }
+        padding: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+        .menuItems .primaryActions {
+         visibility: hidden;
+        }
+      }
+      .close {
+        position: absolute;
+        right: 32px;
+        width: 32px;
+        height: 32px;
+        opacity: 1;
+      }
+     
+      .close:before, .close:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #333;
+      }
+      .close:before {
+        transform: rotate(45deg);
+      }
+      .close:after {
+        transform: rotate(-45deg);
+      }
+      
