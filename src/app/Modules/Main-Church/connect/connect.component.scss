@@ -218,10 +218,13 @@
                 position: relative;
                 min-height: 1px;
                 display: flex;
-                max-width: 400px;
+               width: 25%;
+                    overflow: hidden;
+                    object-fit: contain;
                 img{
-                   
+                    
                 }
+                
                 
             }
             .imgEmpty{
