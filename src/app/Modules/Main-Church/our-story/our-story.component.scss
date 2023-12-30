@@ -106,6 +106,8 @@ $page_width : 1300px;
         width: 100%;
         max-width: 550px;
         margin-right: auto;
+        padding-right: 20px;
+        width: 100%;
         .title{
             font-family: $termina_font;
             font-size: 32px;
@@ -121,6 +123,11 @@ $page_width : 1300px;
             font-family: $termina_font;
             font-weight: 200;
             line-height: 1.7;
+            i,b{
+                font-family: $termina_font;
+                color : $blue;
+                font-weight: 400;
+            }
         }
     }
 }

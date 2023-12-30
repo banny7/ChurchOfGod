@@ -21,6 +21,9 @@ $ibm_font : 'IBM Plex Mono', monospace;
         position: relative;
         z-index: 1;
         padding-top: 45px;
+        @media (max-width: 991px) {
+            height: auto;
+        }
         .contactForm{
             background-color: $white;
             max-width: 900px;
@@ -43,9 +46,7 @@ $ibm_font : 'IBM Plex Mono', monospace;
                     flex-direction: column;
                     margin-bottom: 20px;
                     text-transform: uppercase;
-                    &:nth-of-type(odd){
-                        margin-right: 15px;
-                    }
+                    
                     label{
                         font-family: $termina_font;
                         font-weight: 600;
@@ -61,6 +62,15 @@ $ibm_font : 'IBM Plex Mono', monospace;
                             background-color: $black;
                             color: $white;
                         }
+                    }
+                    @media (min-width: 992px) {
+                        &:nth-of-type(odd){
+                            margin-right: 15px;
+                        }
+                    }
+                    @media (max-width: 991px) {
+                        width: 100%;
+                        margin-right: 0px;
                     }
                 }
                 .formAction{
@@ -88,14 +98,20 @@ $ibm_font : 'IBM Plex Mono', monospace;
     .footerInfo{
         background: $black;
         margin-top: 2px;
-        padding-top: 72px;
-        padding-bottom: 70px;
+        padding: 72px 0px;
+        @media (max-width: 991px) {
+            padding: 72px 20px;
+        }
         .detailWrapper{
             border: 2px solid $white;
             display: flex;
             max-width: 1340px;
             margin: auto;
             margin-top: 40px;
+            box-sizing: border-box;
+            @media (max-width: 991px) {
+                    flex-direction: column;
+            }
             .churchDetails{
                 border: 2px solid $white;
                 border-right-width: 0px;
@@ -103,6 +119,7 @@ $ibm_font : 'IBM Plex Mono', monospace;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                box-sizing: border-box;
                 &:first-of-type{
                     border-left-width: 0px;
                 }

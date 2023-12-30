@@ -37,6 +37,8 @@ windowWidth: any;
     this.updateMenuState();
   }
   navigateTo(page:any){
+    this.toggleMenu();
+    this.updateMenuState();
     this.route.navigateByUrl(page);
   }
   toggleMenu() {
