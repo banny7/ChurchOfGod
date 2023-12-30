@@ -15,66 +15,163 @@ export class LeadershipComponent implements OnInit {
   pastors = [
     {
       image: "1", 
-      name: 'Beth Lavino'
+      name: 'Joseph Cleetus'
     },
     {
       image: "2",
-      name: 'Jesse Baumgartner'
+      name: 'Thomas Varghese'
     },
     {
-      image: "3", 
-      name: 'Beth Lavino'
+      image: "20", 
+      name: 'Mariyamma Sam',
+      role: 'Worship'
     },
-    {
-      image: "4", 
-      name: 'Jesse Baumgartner'
-    },
-    {
-      image: "5", 
-      name: 'Jesse Baumgartner'
-    },
-    {
-      image: "6", 
-      name: 'Jesse Baumgartner'
-    }
   ]
   staffLists = [
     {
-      image: "8", 
-      name: 'Paul Lavino',
-      role: 'CHAPEL PASTOR'
+      image: "feby_sathish", 
+      name: 'Feby Sathish',
+      role: 'Worship'
+    },
+    {
+      image: "kesiya_babu", 
+      name: 'Kesiya Babu',
+      role: 'Worship'
+    },
+    {
+      image: "anna_mathews", 
+      name: 'Anna Mathews',
+      role: 'Worship'
     }, 
     {
-      image: "1",
-      name: 'Kaitlyn Hoorneman',
-      role: 'GKIDS PASTOR'
+      image: "boaz_sam", 
+      name: 'Boaz Sam',
+      role: 'Media'
+    }, 
+    {
+      image: "ebez_joy", 
+      name: 'Ebez Joy',
+      role: 'Media'
+    },
+    {
+      image: "antony_philip", 
+      name: 'Antony Philip',
+      role: 'Media'
+    },
+    {
+      image: "emil_k_babu", 
+      name: 'Emil K Babu',
+      role: 'Media'
+    },
+    {
+      image: "anna_saji",
+      name: 'Anna Saji',
+      role: 'Media'
+    },
+    {
+      image: "shijo_john", 
+      name: 'Shijo John',
+      role: 'Media'
+    }, 
+    {
+      image: "sachin_roystone", 
+      name: 'Sachin Roystone',
+      role: 'Media'
+    }, 
+    {
+      image: "20", 
+      name: 'N/a',
+      role: 'Ahavah Home'
+    },
+    {
+      image: "justin_john", 
+      name: 'Justin John',
+      role: 'Ahavah Home'
+    },
+    
+    {
+      image: "annie_babu",
+      name: 'Annie Babu',
+      role: 'Ahavah Home'
+    }, 
+     {
+      image: "sona_melvin",
+      name: 'Sona Melvin',
+      role: 'Ahavah Home'
     }, {
-      image: "2",
-      name: 'John Islas',
-      role: 'Youth Coordinator'
-    }, {
-      image: "3",
-      name: 'Kayla Gergen',
-      role: 'BRAND DIRECTOR'
-    }, {
-      image: "5", 
-      name: 'Paul Lavino',
-      role: 'CHAPEL PASTOR'
-    }, {
-      image: "4",
-      name: 'Kaitlyn Hoorneman',
-      role: 'GKIDS PASTOR'
-    }, {
-      image: "6", 
-      name: 'Kaitlyn Hoorneman',
-      role: 'GKIDS PASTOR'
-    }, {
-      image: "7", 
-      name: 'Paul Lavino',
-      role: 'CHAPEL PASTOR'
+      image: "bini_john",
+      name: 'Bini John',
+      role: 'Ahavah Home'
+    }, 
+   
+    
+    {
+      image: "karishma_sharma", 
+      name: 'Karishma Sharma',
+      role: 'Ahavah Home'
     }, 
     
+    {
+      image: "sarah_sachin", 
+      name: 'Sarah Sachin',
+      role: 'Ahavah Home'
+    },  
+    {
+      image: "7", 
+      name: 'Joyce Benson',
+      role: 'Ahavah Home'
+    }, 
 
+    {
+      image: "neethu_rintu", 
+      name: 'Neethu Rintu',
+      role: 'Ahavah Home'
+    },
+    {
+      image: "22", 
+      name: 'Anu Antony',
+      role:  'Ahavah Home'
+    },
+
+    {
+      image: "banny_b", 
+      name: 'Banny B',
+      role: 'N/a'
+    },
+    
+   
+    {
+      image: "19", 
+      name: 'N/a',
+      role: 'N/a'
+    },
+    
+    
+    
+    {
+      image: "24", 
+      name: 'N/a',
+      role: 'N/a'
+    },
+    {
+      image: "17", 
+      name: 'N/a',
+      role: 'N/a'
+    },
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
   ]
   constructor(
     private route:Router

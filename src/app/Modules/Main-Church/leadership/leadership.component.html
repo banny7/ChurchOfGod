@@ -14,19 +14,19 @@
         <div class="designation">
           <h3>Founders</h3>
           <h4>Late Pr. N. G. Samkutty and <br> Mrs. Mariyamma Sam</h4>
-          <button (click)="goTo('founder-page')">Learn About Sam </button>
+          <button (click)="goTo('founder-page')">Learn About<br> Sam Family </button>
         </div>
       </div>
       <div class="leadPastorContainer">
         <div class="profile">
           <div class="profileImage">
-            <img src="/assets/images/modules/main-church/leadership/leadPastor.jpg" alt="">
+            <img src="/assets/images/modules/main-church/leadership/leadPastor2.jpg" alt="">
           </div>
         </div>
         <div class="designation">
           <h3>Leaders</h3>
-          <h4>Sr. Pr. Satish Philip and <br> Febi Satish</h4>
-          <button (click)="goTo('satish-and-febi')">Meet Satish & Febi </button>
+          <h4>Sr. Pr. Sathish Philip and <br> Feby Sathish</h4>
+          <button (click)="goTo('satish-and-febi')">Meet Sathish & Feby </button>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
     <div class="pastors">
       <div class="pastor" *ngFor="let pastor of pastors">
         <div class="pastorImage">
-          <img [src]="'/assets/images/modules/main-church/leadership/members/'+pastor.image + '.jpg'" alt="">
+          <img [src]="'/assets/images/modules/main-church/leadership/pastors/'+pastor.image + '.jpg'" alt="">
         </div>
         <h6>{{pastor.name}}</h6>
         <!-- <div class="memberContainer" *ngFor="let team of executiveTeam">
@@ -63,22 +63,9 @@
         </div>
         <h6>{{staff.name}}</h6>
         <p>{{staff.role}}</p>
-        <!-- <div class="memberContainer" *ngFor="let team of executiveTeam">
-          <img [src]="team.image" alt="">
-          <h6>{{team.name}}</h6>
-        </div> -->
       </div>
     </div>
   </div>
-  <!-- <div class="churchStaffsWrapper">
-    <h3>Church Staff</h3>
-    <div class="staffDetails">
-      <div class="staffs" *ngFor="let staff of staffLists">
-        <img [src]="staff.image" alt="">
-        <h6>{{staff.name}}</h6>
-        <p>{{staff.role}}</p>
-      </div>
-    </div>
-    
-  </div> -->
+  
+
 </div>
