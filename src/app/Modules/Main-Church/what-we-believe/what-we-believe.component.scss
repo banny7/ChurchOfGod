@@ -42,6 +42,7 @@ $page_width : 1300px;
         }
     }
     .sections{
+        margin: 3rem;
       .sectionContainer{
         display: flex;
         margin-left: auto;
@@ -49,14 +50,21 @@ $page_width : 1300px;
         max-width: 1400px;
         .leftSection{
             display: flex;
+            width: 100%;
+            max-width: 700px;
+            margin: 10px;
             .icon{
+                margin-right: 10px;
                 img{
                     width: 25px;
                 }
             }
             .text{
-                font-size: 16px;
-                font-family: $primary_font;
+                p{
+                    font-size: 16px;
+                    font-family: $termina_font;
+                }
+                
                 p:first-of-type{
                     
                     font-weight: 600;
