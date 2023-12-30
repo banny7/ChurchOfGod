@@ -78,30 +78,88 @@ $page_width : 1300px;
         width: 300px;
     }
 }
-.ourBeliefs{
-    background-color:#212322;
+.ourBeliefs {
+    background-color: #212322;
     padding: 4rem 1rem;
     position: relative;
-    .ourBeliefsWrapper{
+  
+    .ourBeliefsWrapper {
+      max-width: 1400px;
+      margin: 0 auto; // Center the container horizontally
+      display: flex;
+  
+      img {
+        max-width: 600px;
+        // position: fixed; // Make the image fixed
+        // top: 0; // Stick it to the top
+        // left: 0; // Stick it to the left
+        height: 100vh; // Take full height of the viewport
+        // z-index: -1; // Move it behind the content
+      }
+  
+      .rightSection {
+        width: calc(100% - 600px); // Subtract the image width from the total width
         display: flex;
-        margin-right: auto;
-        margin-left: auto;
+        flex-direction: column; // Align items in a column layout
+        align-items: center; // Center items horizontally
+        min-height: 1px;
         position: relative;
-        max-width: 1400px;
-        img{
-            max-width: 600px;
+        // padding-left: 600px; // Adjust padding to create space for the fixed image
+  
+        h3 {
+          color: #fff;
+          font-family: $termina_font;
+          font-size: 32px;
+          font-weight: 600;
+          margin-bottom: 20px; // Add margin for spacing
         }
-        .rightSection
-        {
-            position: relative;
-            min-height: 1px;
-            display: flex;
-            h3{
-                color: #fff;
-                font-family: $termina_font;
-                font-size: 32px;
-                font-weight: 600;
+  
+        .contentsWrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around; // Distribute items evenly along the row
+  
+          .content {
+            width: 45%;
+            margin: 12px;
+  
+            .dividerTop {
+              border-style: solid;
+              color: #007BFF;
+              border-width: 4px;
+              width: 100px;
+  
+              @media (max-width: 768px) {
+                width: 100px;
+              }
             }
+  
+            h6 {
+              color: #fff;
+              font-family: 'REM', Sans-serif;
+              font-size: 20px;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+  
+            p {
+              color: #fff;
+              font-size: 16px;
+              font-family: 'REM', Sans-serif;
+              text-align: justify;
+              width: 82%;
+            }
+  
+            p:last-of-type {
+              a {
+                color: #fff;
+                text-decoration: none;
+                font-family: 'REM', Sans-serif;
+              }
+            }
+          }
         }
+      }
     }
-}
+  }
+  
