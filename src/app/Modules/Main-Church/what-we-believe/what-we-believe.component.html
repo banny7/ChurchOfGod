@@ -30,8 +30,10 @@
         </div>
         
         <div class="text">
-          <p>Evangelism</p>
-          <p>We want to see the lost be found.</p>
+          <p>
+						Discipleship					</p>
+          <p>
+						We want to equip those who are found to live their new lives as fully devoted followers of Jesus.					</p>
         </div>
         
       </div>
@@ -59,4 +61,35 @@
   </div>
   </div>
 
+</section>
+<section class="ourValues">
+  <div class="ourValuesContainer">
+    <h3>Our Values</h3>
+    <div class="valuesWrapper">
+      <div class="values">
+        <ul>
+          <li *ngFor="let value of values">
+            <img src="../../../../assets/images/modules/main-church/what-we-believe/arrow.jpg" alt="">
+            <span>{{value}}</span>
+          </li>
+          
+         
+
+        </ul>
+      </div>
+      <div class="rightImg">
+        <img src="https://mlvggls1rius.i.optimole.com/w:469/h:313/q:90/f:best/https://generation.church/wp-content/uploads/2022/10/Mesa-July-17-2022-46.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="verse">
+<div class="verseWrapper">
+  <div class="dividerTop" [style.transform]="getTranslationLeft()" ></div>
+  <p>
+    Everything for the glory of Jesus Christ “who came from the father, full of grace and truth”						</p>
+    <div class="reference">
+      John 1:14</div>
+  <div class="dividerBottom" [style.transform]="getTranslationRight()" ></div>
+</div>
 </section>

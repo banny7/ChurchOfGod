@@ -54,6 +54,8 @@ export class WhatWeBelieveComponent implements OnInit {
       description:'Blessed Marriage is a biblically-centered ministry that is dedicated to helping couples understand God’s purpose for marriage and equipping them in the pursuit of oneness.'
     }
   ]
+  values=['Whatever It Takes','Show Our Passion','We Bleed GC','Never Stop Growing','Honor Up, Down, and All Around',
+  'Church Should Be Fun','Make It Attractive','Reject Good for Great','Lead From the Front','We Get to Give']
   constructor() { }
 
   ngOnInit() {
