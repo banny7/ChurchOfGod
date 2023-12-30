@@ -12,79 +12,69 @@ import { Router } from '@angular/router';
   imports: [SharedModule]
 })
 export class LeadershipComponent implements OnInit {
-  executiveTeam = [
+  pastors = [
     {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Beth-Lavino.jpeg',
+      image: "1", 
       name: 'Beth Lavino'
     },
     {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Jesse-Baumgartner.jpeg',
+      image: "2",
       name: 'Jesse Baumgartner'
     },
     {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Beth-Lavino.jpeg',
+      image: "3", 
       name: 'Beth Lavino'
     },
     {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Jesse-Baumgartner.jpeg',
+      image: "4", 
       name: 'Jesse Baumgartner'
     },
     {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Jesse-Baumgartner.jpeg',
+      image: "5", 
       name: 'Jesse Baumgartner'
     },
     {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Jesse-Baumgartner.jpeg',
+      image: "6", 
       name: 'Jesse Baumgartner'
     }
   ]
   staffLists = [
     {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Kaitlyn-Hoorneman.jpeg',
+      image: "8", 
+      name: 'Paul Lavino',
+      role: 'CHAPEL PASTOR'
+    }, 
+    {
+      image: "1",
       name: 'Kaitlyn Hoorneman',
       role: 'GKIDS PASTOR'
     }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:1000/h:667/q:90/f:best/https://generation.church/wp-content/uploads/2022/03/Studio-Session-166-3.jpg',
+      image: "2",
       name: 'John Islas',
       role: 'Youth Coordinator'
     }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:206/h:206/q:90/f:best/https://generation.church/wp-content/uploads/2023/06/kayla-gergen.jpg',
+      image: "3",
       name: 'Kayla Gergen',
       role: 'BRAND DIRECTOR'
     }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Paul-Lavino.jpeg',
+      image: "5", 
       name: 'Paul Lavino',
       role: 'CHAPEL PASTOR'
     }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Kaitlyn-Hoorneman.jpeg',
+      image: "4",
       name: 'Kaitlyn Hoorneman',
       role: 'GKIDS PASTOR'
     }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Kaitlyn-Hoorneman.jpeg',
+      image: "6", 
       name: 'Kaitlyn Hoorneman',
       role: 'GKIDS PASTOR'
     }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Paul-Lavino.jpeg',
+      image: "7", 
       name: 'Paul Lavino',
       role: 'CHAPEL PASTOR'
-    }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Kaitlyn-Hoorneman.jpeg',
-      name: 'Kaitlyn Hoorneman',
-      role: 'GKIDS PASTOR'
-    }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Kaitlyn-Hoorneman.jpeg',
-      name: 'Kaitlyn Hoorneman',
-      role: 'GKIDS PASTOR'
-    }
-    , {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Kaitlyn-Hoorneman.jpeg',
-      name: 'Kaitlyn Hoorneman',
-      role: 'GKIDS PASTOR'
-    }, {
-      image: 'https://mlvggls1rius.i.optimole.com/w:auto/h:auto/q:90/f:best/https://generation.church/wp-content/uploads/2022/01/Kaitlyn-Hoorneman.jpeg',
-      name: 'Kaitlyn Hoorneman',
-      role: 'GKIDS PASTOR'
-    }
+    }, 
+    
+
   ]
   constructor(
     private route:Router
