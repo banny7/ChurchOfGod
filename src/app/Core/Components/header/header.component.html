@@ -2,7 +2,7 @@
   <div class="header">
     <img src="/assets/images/core/header/logo.png" alt=""  (click)="navigateTo('/')">
     <div class="menuItems">
-      <div 
+      <div [ngClass]="{'hidden-menu': !isMenuOpen && windowWidth <=768}"
         *ngFor="let page of pages "
         class="menuItem" 
         (click)="navigateTo(page.name)"
@@ -10,13 +10,23 @@
         {{page.title}}
       </div>
     </div>
-    <a class="primaryActions"  href="https://www.youtube.com/watch?v=qz9VxIP_2Pk">
+    <a [ngClass]="{'hidden-menu': !isMenuOpen && windowWidth <=768}" class="primaryActions"  href="https://www.youtube.com/watch?v=qz9VxIP_2Pk">
       Watch Live
     </a>
-    <div class="dropdown">
-      <div class="action">
-        
-      </div>
+    <div  *ngIf="!isMenuOpen" class="hamburgerMenu" (click)="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
+    <a *ngIf="isMenuOpen" href="#" class="close" (click)="toggleMenu()"></a>
+    <div class="sideNavbar" [ngClass]="{'open': isMenuOpen}">
+      <div *ngFor="let page of pages" class="menuItem" (click)="navigateTo(page.name)">
+        {{ page.title }}
+      </div>
+       <a class="primaryAction"  href="https://www.youtube.com/watch?v=qz9VxIP_2Pk">
+      Watch Live
+    </a>
+    </div>
+
   </div>
 </div>
