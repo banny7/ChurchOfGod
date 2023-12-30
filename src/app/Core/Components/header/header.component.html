@@ -13,7 +13,7 @@
     <a [ngClass]="{'hidden-menu': !isMenuOpen && windowWidth <=768}" class="primaryActions"  href="https://www.youtube.com/watch?v=qz9VxIP_2Pk">
       Watch Live
     </a>
-    <div  *ngIf="!isMenuOpen" class="hamburgerMenu" (click)="toggleMenu()">
+    <div  *ngIf="!isMenuOpen && windowWidth <=768" class="hamburgerMenu" (click)="toggleMenu()">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
