@@ -80,7 +80,7 @@ export class LeadershipComponent implements OnInit {
     }, 
     {
       image: "20", 
-      name: 'N/a',
+      name: 'Renny Joseph',
       role: 'Ahavah Home'
     },
     {
@@ -150,13 +150,13 @@ export class LeadershipComponent implements OnInit {
     
     {
       image: "24", 
-      name: 'N/a',
-      role: 'N/a'
+      name: 'Sam',
+      role: 'Media'
     },
     {
       image: "17", 
-      name: 'N/a',
-      role: 'N/a'
+      name: 'John K Mathew',
+      role: 'Ahavah Home'
     },
     
     

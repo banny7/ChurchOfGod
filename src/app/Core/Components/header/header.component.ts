@@ -40,8 +40,6 @@ windowWidth: any;
     this.route.navigateByUrl(page);
   }
   toggleMenu() {
-    console.log('TOGGLED!!');
-    
     this.isMenuOpen = !this.isMenuOpen;
   }
     // Function to update the window width
@@ -50,12 +48,9 @@ windowWidth: any;
       this.windowWidth = event.target.innerWidth;
       this.updateMenuState();
     }
-      // Function to update the menu state based on the window width
   updateMenuState() {
     if (window.innerWidth >= 768) {
-      this.isMenuOpen = true; // Show menu when screen width is 768px or more
-    } else {
-      this.isMenuOpen = false; // Hide menu when screen width is less than 768px
+      this.isMenuOpen = false 
     }
   }
   
