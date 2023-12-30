@@ -4,6 +4,9 @@ import { LeadershipComponent } from './Modules/Main-Church/leadership/leadership
 import { ConnectComponent } from './Modules/Main-Church/connect/connect.component';
 import { LiveStreamingComponent } from './Modules/Media/live-streaming/live-streaming.component';
 import { WhatWeBelieveComponent } from './Modules/Main-Church/what-we-believe/what-we-believe.component';
+import { OurStoryComponent } from './Modules/Main-Church/our-story/our-story.component';
+import { FounderComponent } from './Modules/Main-Church/leadership/founder/founder.component';
+import { SatishAndFebiComponent } from './Modules/Main-Church/leadership/satish-and-febi/satish-and-febi.component';
 
 export const routes: Routes = [
     {
@@ -15,15 +18,28 @@ export const routes: Routes = [
         component:LeadershipComponent
     },
     {
+        path:"our-story",
+        component: OurStoryComponent
+    },
+    {
         path:'connect',
         component:ConnectComponent
+    },
+    
+    {
+        path:'what-we-believe',
+        component: WhatWeBelieveComponent
     },
     {
         path:'watch-live',
         component: LiveStreamingComponent
     },
     {
-        path:'what-we-believe',
-        component: WhatWeBelieveComponent
+        path : 'founder-page',
+        component : FounderComponent
+    },
+    {
+        path : 'satish-and-febi',
+        component : SatishAndFebiComponent
     }
 ];

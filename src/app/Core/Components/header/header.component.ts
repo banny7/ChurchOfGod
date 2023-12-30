@@ -35,17 +35,4 @@ export class HeaderComponent implements OnInit {
   navigateTo(page:any){
     this.route.navigateByUrl(page);
   }
-  navigateToHome(){
-    this.route.navigateByUrl('');
-  }
-  navigateToLeaderShip(){
-    this.route.navigateByUrl('/leadership');
-  }
-  navigateToConnect(){
-    this.route.navigateByUrl('/connect');
-  }
-  navigateToLiveStreaming(){
-    this.route.navigateByUrl('/watch-live');
-
-  }
 }

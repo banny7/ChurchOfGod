@@ -4,36 +4,73 @@
   ></app-section-header>
 
   <section>
-    <div class="leadPastorContainer">
-      <div class="profile">
-        <div class="profileImage">
-          <img src="/assets/images/modules/main-church/leadership/leadPastor.jpg" alt="">
+    <div class="leadersWrapper">
+      <div class="leadPastorContainer">
+        <div class="profile">
+          <div class="profileImage">
+            <img src="/assets/images/modules/main-church/leadership/leadPastor.jpg" alt="">
+          </div>
+        </div>
+        <div class="designation">
+          <h3>Founders</h3>
+          <h4>Late Pr. N. G. Samkutty Founding Pastor and Mrs. Mariyamma Sam</h4>
+          <button (click)="goTo('founder-page')">Learn About Sam </button>
         </div>
       </div>
-      <div class="designation">
-        <h3>Lead Pastors</h3>
-        <h4>Satish Philip and Febi Satish</h4>
-        <button>Meet Satish & Febi </button>
+      <div class="leadPastorContainer">
+        <div class="profile">
+          <div class="profileImage">
+            <img src="/assets/images/modules/main-church/leadership/leadPastor.jpg" alt="">
+          </div>
+        </div>
+        <div class="designation">
+          <h3>Leaders</h3>
+          <h4>Sr. Pr. Satish Philip and Febi Satish</h4>
+          <button (click)="goTo('satish-and-febi')">Meet Satish & Febi </button>
+        </div>
       </div>
-
     </div>
   </section>
 
   <section class="subFooter">
     <div class="backgroundImg"></div>
   </section>
-  <div class="executiveTeamWrapper">
-    <h3>Executive Team</h3>
-    <div class="teamList">
-      <div class="details">
-        <div class="memberContainer" *ngFor="let team of executiveTeam">
+  <div class="pastorsWrapper">
+    <div class="wrapperHeader">
+      <h3>Pastors</h3>
+    </div>
+    <div class="pastors">
+      <div class="pastor" *ngFor="let team of executiveTeam">
+        <div class="pastorImage">
+          <img [src]="team.image" alt="">
+        </div>
+        <h6>{{team.name}}</h6>
+        <!-- <div class="memberContainer" *ngFor="let team of executiveTeam">
           <img [src]="team.image" alt="">
           <h6>{{team.name}}</h6>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
-  <div class="churchStaffsWrapper">
+  <div class="pastorsWrapper">
+    <div class="wrapperHeader">
+      <h3>Church Staff</h3>
+    </div>
+    <div class="pastors">
+      <div class="pastor" *ngFor="let staff of staffLists">
+        <div class="pastorImage">
+          <img [src]="staff.image" alt="">
+        </div>
+        <h6>{{staff.name}}</h6>
+        <p>{{staff.role}}</p>
+        <!-- <div class="memberContainer" *ngFor="let team of executiveTeam">
+          <img [src]="team.image" alt="">
+          <h6>{{team.name}}</h6>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- <div class="churchStaffsWrapper">
     <h3>Church Staff</h3>
     <div class="staffDetails">
       <div class="staffs" *ngFor="let staff of staffLists">
@@ -43,5 +80,5 @@
       </div>
     </div>
     
-  </div>
+  </div> -->
 </div>
