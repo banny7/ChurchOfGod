@@ -1,5 +1,10 @@
 <div class="connectWrapper">
-  <section class="connectSection">
+  <app-section-header 
+    title="Connect <br> With Us" 
+    description="Find Your Place at Gospel Centre"
+    image="/assets/images/shared/church-group/1.jpg"
+  ></app-section-header>
+  <!-- <section class="connectSection">
     <div class="connectHeader">
       <div class="leftContainer">
         <div class="alignContainer">
@@ -18,7 +23,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="midWrapper">
     <div class="midConnectContainer">
       <div class="leftContent">
@@ -28,7 +33,7 @@
         <div class="dividerTop" [style.transform]="getTranslationLeft()" ></div>
         <div class="welcomePhrase">
           <p>Welcome. We’re glad you’re here.</p>
-          <p>There’s a place designed just for you at Generation Church.</p>
+          <p>There’s a place designed just for you at Gospel Centre.</p>
         </div>
         <div class="dividerBottom" [style.transform]="getTranslationRight()" ></div>
       </div>
@@ -38,7 +43,7 @@
   <section class="programs">
     <div class="mainContainer">
       <div class="contentsWrapper">
-        <div class="content" *ngFor="let content of contents; ">
+        <div class="content" *ngFor="let content of contents.slice(0,6); ">
           <div class="dividerTop"></div>
           <h6>{{content.heading}}</h6>
           <p>{{content.description}}</p>
@@ -49,16 +54,16 @@
     </div>
     <div class="imageContainer">
       <div class="imgWrapper">
-        <img src="https://mlvggls1rius.i.optimole.com/w:768/h:512/q:90/f:best/https://generation.church/wp-content/uploads/2023/06/visit-mesa-church-worship-3.jpg" alt="">
+        <img src="/assets/images/modules/main-church/connect/1.jpg" alt="">
       </div>
       <div class="imgEmpty">
         <!-- Empty -->
       </div>
       <div class="imgWrapper">
-        <img src="https://mlvggls1rius.i.optimole.com/w:720/h:1080/q:90/f:best/https://generation.church/wp-content/uploads/2022/02/CWU2.jpg" alt="">
+        <img src="/assets/images/modules/main-church/connect/7.jpg" alt="">
       </div>
       <div class="imgWrapper">
-        <img src="https://mlvggls1rius.i.optimole.com/w:720/h:1080/q:90/f:best/https://generation.church/wp-content/uploads/2023/07/visit-south-mountain-church-lobby-2.jpg" alt="">
+        <img src="/assets/images/modules/main-church/connect/5.jpg" alt="">
       </div>
       <!-- <div class="imgWrapper">
         <img src="https://mlvggls1rius.i.optimole.com/w:768/h:512/q:90/f:best/https://generation.church/wp-content/uploads/2023/06/visit-mesa-church-worship-3.jpg" alt="">
@@ -66,11 +71,11 @@
     </div>
     <div class="mainContainer">
       <div class="contentsWrapper">
-        <div class="content" *ngFor="let content of contents; ">
+        <div class="content" *ngFor="let content of contents.slice(6,12); ">
           <div class="dividerTop"></div>
           <h6>{{content.heading}}</h6>
           <p>{{content.description}}</p>
-          <p><a href="">Learn More</a></p>
+          <!-- <p><a href="">Learn More</a></p> -->
         </div>
        
       </div>

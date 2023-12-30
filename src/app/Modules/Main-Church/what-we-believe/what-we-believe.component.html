@@ -1,14 +1,11 @@
-<app-section-header
-  title="What We Believe"
-  description="LEARN WHAT SETS Gospel Centre APART"
-  image="/assets/images/modules/main-church/what-we-believe/primary.jpeg"
-></app-section-header>
+<app-section-header title="What We Believe" description="LEARN WHAT SETS Gospel Centre APART"
+  image="/assets/images/modules/main-church/what-we-believe/primary.jpeg"></app-section-header>
 <section class="missionContainer">
   <div class="missionWrapper">
-    <div class="dividerTop" [style.transform]="getTranslationLeft()" ></div>
+    <div class="dividerTop" [style.transform]="getTranslationLeft()"></div>
     <div class="header">Our Mission</div>
-      <p>Everything we do is so that people far from God can experience <br> new life in Jesus.</p>
-      <!-- <span>That Means:</span> -->
+    <p>Everything we do is so that people far from God can experience <br> new life in Jesus.</p>
+    <!-- <span>That Means:</span> -->
   </div>
   <!-- <section class="sections">
     <div class="sectionContainer">
@@ -38,26 +35,26 @@
       </div>
     </div>
   </section> -->
-  <div class="dividerBottom" [style.transform]="getTranslationRight()" ></div>
+  <div class="dividerBottom" [style.transform]="getTranslationRight()"></div>
 </section>
 <section class="ourBeliefs">
   <div class="ourBeliefsWrapper">
-    
+
     <img src="/assets/images/modules/main-church/what-we-believe/primary.jpg" alt="">
-  <div class="rightSection">
-   
-    <div class="contentsWrapper">
-    
-      <div class="content" *ngFor="let content of contents; ">
-        <div class="dividerTop"></div>
-        <h6>{{content.heading}}</h6>
-        <p>{{content.description}}</p>
-        <!-- <p><a href="">Learn More</a></p> -->
+    <div class="rightSection">
+
+      <div class="contentsWrapper">
+
+        <div class="content" *ngFor="let content of contents; ">
+          <div class="dividerTop"></div>
+          <h6>{{content.heading}}</h6>
+          <p>{{content.description}}</p>
+          <!-- <p><a href="">Learn More</a></p> -->
+        </div>
+
+
       </div>
-      
-     
     </div>
-  </div>
   </div>
 
 </section>
@@ -71,24 +68,26 @@
             <img src="../../../../assets/images/modules/main-church/what-we-believe/arrow.jpg" alt="">
             <span>{{value}}</span>
           </li>
-          
-         
+
+
 
         </ul>
       </div>
       <div class="rightImg">
-        <img src="https://mlvggls1rius.i.optimole.com/w:469/h:313/q:90/f:best/https://generation.church/wp-content/uploads/2022/10/Mesa-July-17-2022-46.jpeg" alt="">
+        <img
+          src="/assets/images/shared/church-group/20.jpg"
+          alt="">
       </div>
     </div>
   </div>
 </section>
 <section class="verse">
-<div class="verseWrapper">
-  <div class="dividerTop" [style.transform]="getTranslationLeft()" ></div>
-  <p>
-    Everything for the glory of Jesus Christ “who came from the father, full of grace and truth”						</p>
-    <div class="reference">
-      John 1:14</div>
-  <div class="dividerBottom" [style.transform]="getTranslationRight()" ></div>
-</div>
+  <div class="verseWrapper">
+    <div class="dividerTop" [style.transform]="getTranslationLeft()"></div>
+    <p>
+      And we know that in all things God works for the good of those who love him, who have been called according to
+      his purpose. </p>
+    <div class="reference">Romans 8:28</div>
+    <div class="dividerBottom" [style.transform]="getTranslationRight()"></div>
+  </div>
 </section>

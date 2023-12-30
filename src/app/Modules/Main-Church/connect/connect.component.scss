@@ -214,15 +214,16 @@
             margin-left: auto;
             max-width: 1400px;
             height:300px;
+            justify-content: space-between;
             .imgWrapper{
                 position: relative;
                 min-height: 1px;
                 display: flex;
-               width: 25%;
+            //    width: 25%;
                     overflow: hidden;
                     object-fit: contain;
                 img{
-                    
+                    object-fit: cover;
                 }
                 
                 
