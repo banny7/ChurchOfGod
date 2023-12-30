@@ -8,12 +8,12 @@
       <div class="leadPastorContainer">
         <div class="profile">
           <div class="profileImage">
-            <img src="/assets/images/modules/main-church/leadership/leadPastor.jpg" alt="">
+            <img src="/assets/images/modules/main-church/leadership/founder.jpg" alt="">
           </div>
         </div>
         <div class="designation">
           <h3>Founders</h3>
-          <h4>Late Pr. N. G. Samkutty Founding Pastor and Mrs. Mariyamma Sam</h4>
+          <h4>Late Pr. N. G. Samkutty and <br> Mrs. Mariyamma Sam</h4>
           <button (click)="goTo('founder-page')">Learn About Sam </button>
         </div>
       </div>
@@ -25,7 +25,7 @@
         </div>
         <div class="designation">
           <h3>Leaders</h3>
-          <h4>Sr. Pr. Satish Philip and Febi Satish</h4>
+          <h4>Sr. Pr. Satish Philip and <br> Febi Satish</h4>
           <button (click)="goTo('satish-and-febi')">Meet Satish & Febi </button>
         </div>
       </div>
@@ -40,11 +40,11 @@
       <h3>Pastors</h3>
     </div>
     <div class="pastors">
-      <div class="pastor" *ngFor="let team of executiveTeam">
+      <div class="pastor" *ngFor="let pastor of pastors">
         <div class="pastorImage">
-          <img [src]="team.image" alt="">
+          <img [src]="'/assets/images/modules/main-church/leadership/members/'+pastor.image + '.jpg'" alt="">
         </div>
-        <h6>{{team.name}}</h6>
+        <h6>{{pastor.name}}</h6>
         <!-- <div class="memberContainer" *ngFor="let team of executiveTeam">
           <img [src]="team.image" alt="">
           <h6>{{team.name}}</h6>
@@ -59,7 +59,7 @@
     <div class="pastors">
       <div class="pastor" *ngFor="let staff of staffLists">
         <div class="pastorImage">
-          <img [src]="staff.image" alt="">
+          <img [src]="'/assets/images/modules/main-church/leadership/members/'+staff.image + '.jpg'" alt="">
         </div>
         <h6>{{staff.name}}</h6>
         <p>{{staff.role}}</p>
