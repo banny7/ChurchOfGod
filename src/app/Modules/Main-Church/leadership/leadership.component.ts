@@ -42,17 +42,23 @@ export class LeadershipComponent implements OnInit {
       image: "anna_mathews", 
       name: 'Anna Mathews',
       role: 'Worship'
+    },
+    {
+      image: "ebez_joy", 
+      name: 'Ebez Joy',
+      role: 'Worship'
     }, 
+    {
+      image: "aiden_bijoy", 
+      name: 'Aiden Bijoy',
+      role: 'Worship'
+    },
     {
       image: "boaz_sam", 
       name: 'Boaz Sam',
       role: 'Media'
     }, 
-    {
-      image: "ebez_joy", 
-      name: 'Ebez Joy',
-      role: 'Media'
-    },
+    
     {
       image: "antony_philip", 
       name: 'Antony Philip',
@@ -79,12 +85,23 @@ export class LeadershipComponent implements OnInit {
       role: 'Media'
     }, 
     {
+      image: "banny_b", 
+      name: 'Banny B',
+      role: 'Media'
+    },
+    {
+      image: "24", 
+      name: 'Sam Juby',
+      role: 'Media'
+    },
+    
+    {
       image: "20", 
       name: 'Renny Joseph',
       role: 'Ahavah Home'
     },
     {
-      image: "justin_john", 
+      image: "justin_john_2", 
       name: 'Justin John',
       role: 'Ahavah Home'
     },
@@ -132,30 +149,19 @@ export class LeadershipComponent implements OnInit {
       name: 'Anu Antony',
       role:  'Ahavah Home'
     },
-
     {
-      image: "banny_b", 
-      name: 'Banny B',
-      role: 'N/a'
-    },
-    
-   
-    {
-      image: "19", 
-      name: 'N/a',
-      role: 'N/a'
-    },
-    
-    
-    
-    {
-      image: "24", 
-      name: 'Sam',
-      role: 'Media'
+      image: "elsy_john",
+      name: 'Elsy John',
+      role: 'Ahavah Home'
     },
     {
-      image: "17", 
+      image: "john_mathew", 
       name: 'John K Mathew',
+      role: 'Ahavah Home'
+    },
+    {
+      image: "savitha_bijoy", 
+      name: 'Savitha Bijoy',
       role: 'Ahavah Home'
     },
     

@@ -10,7 +10,7 @@
         {{page.title}}
       </div>
     </div>
-    <a [ngClass]="{'hidden-menu': !isMenuOpen && windowWidth <=768}" class="primaryActions"  href="https://www.youtube.com/watch?v=qz9VxIP_2Pk">
+    <a [ngClass]="{'hidden-menu': !isMenuOpen && windowWidth <=768}" class="primaryActions"  href="https://www.youtube.com/watch?v=FhwO6u-xSFg">
       Watch Live
     </a>
     <div class="hamburgerMenu" (click)="toggleMenu()" [ngClass]="{'opened' : isMenuOpen}">
@@ -25,7 +25,7 @@
       <div *ngFor="let page of pages" class="menuItem" (click)="navigateTo(page.name)">
         {{ page.title }}
       </div>
-       <a class="primaryAction"  href="https://www.youtube.com/watch?v=qz9VxIP_2Pk">
+       <a class="primaryAction"  href="https://www.youtube.com/watch?v=FhwO6u-xSFg">
       Watch Live
     </a>
     </div>
