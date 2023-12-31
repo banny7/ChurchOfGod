@@ -34,12 +34,12 @@ export class AppComponent {
   hours: any;
   minutes: any;
   remainingSeconds: any;
-  countdownEnded: boolean = false;
+  countdownEnded: boolean = true;
   ngOnInit(): void {
-    this.updateCountdown();
-    this.countdown = setInterval(() => {
-      this.updateCountdown();
-    }, 1000);
+    // this.updateCountdown();
+    // this.countdown = setInterval(() => {
+    //   this.updateCountdown();
+    // }, 1000);
   }
 
   updateCountdown() {

@@ -16,6 +16,8 @@ export class OurStoryComponent implements OnInit {
   ngOnInit() {
   }
   goTo(page:any){
+    console.log('Clicked');
+    
     this.route.navigateByUrl(page);
   }
 }

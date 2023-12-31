@@ -39,7 +39,7 @@ export const routes: Routes = [
         component : FounderComponent
     },
     {
-        path : 'satish-and-febi',
+        path : 'sathish-and-feby',
         component : SatishAndFebiComponent
     }
 ];
