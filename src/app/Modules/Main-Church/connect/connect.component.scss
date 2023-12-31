@@ -101,6 +101,7 @@
     .midWrapper{
         position: relative;
         padding: 4rem 2rem;
+        overflow: hidden;
         .midConnectContainer{
             display: flex;
             margin-right: auto;
@@ -137,6 +138,12 @@
                         line-height: 1em;
                         width: auto;
                         max-width: auto;
+                        @media (max-width: 991px) {
+                            font-size: 45px;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: 33px;
+                        }
                     }
                 }
             }
@@ -146,6 +153,7 @@
         background-color: #303131;
         padding: 4rem 1rem;
         position: relative;
+        overflow: hidden;
         .mainContainer{
             max-width: 1400px;
             display: flex;
@@ -162,7 +170,9 @@
                     position: relative;
                     width: 30%;
                     margin: 12px;
-                    
+                    @media (max-width: 991px) {
+                        width: 100%;
+                    }
                     .dividerTop{
                         border-style: solid;
                         color: #007BFF;
@@ -185,8 +195,10 @@
                         font-size: 16px;
                         font-family: 'REM',Sans-serif;
                         text-align: justify;
-                        width: 82%
-   ;
+                        width: 82%;
+                        @media (max-width: 991px) {
+                            width: 100%;
+                        }
                     }
                     p:last-of-type{
                         a{
@@ -215,6 +227,9 @@
             max-width: 1400px;
             height:300px;
             justify-content: space-between;
+            @media (max-width: 991px) {
+                display: none;
+            } 
             .imgWrapper{
                 position: relative;
                 min-height: 1px;
@@ -232,6 +247,9 @@
                 width: 300px;
                 height:280px;
                 border: 10px solid #007BFF;
+                @media (max-width: 991px) {
+                    display: none;
+                } 
             }
         }
     }

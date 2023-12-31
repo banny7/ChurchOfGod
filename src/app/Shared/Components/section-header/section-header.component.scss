@@ -9,6 +9,7 @@ $page_width : 1300px;
 .sectionWrapper{
     background-color: $black;
     padding: 62px  0px;
+    overflow: hidden;
     .sectionHeader{
         max-width: 1300px;
         margin: auto;
@@ -18,7 +19,9 @@ $page_width : 1300px;
         background-size: 90px;
         background-position: left top;
         // align-items: center;
-       
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
         .title{
             width: 100%;
             padding-left: 26px;
@@ -64,6 +67,9 @@ $page_width : 1300px;
                 width: 100%;
                 height: 2px;
                 background: white;
+                @media (max-width: 991px) {
+                    display: none;
+                }
             }
         }
     }
