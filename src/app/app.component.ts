@@ -4,6 +4,7 @@ import { HeaderComponent } from './Core/Components/header/header.component';
 import { FooterComponent } from './Core/Components/footer/footer.component';
 import { LeadershipComponent } from './Modules/Main-Church/leadership/leadership.component';
 import { SharedModule } from './Shared/Shared.module';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -15,7 +16,15 @@ import { SharedModule } from './Shared/Shared.module';
     LeadershipComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(-20px)' }),
+        animate('1.5s ease-in-out', style({ opacity: 1, transform: 'translateY(0)' })),
+      ]),
+    ]),
+  ]
 })
 export class AppComponent {
   title = 'churchOfGodFE';
@@ -25,12 +34,12 @@ export class AppComponent {
   hours: any;
   minutes: any;
   remainingSeconds: any;
-  countdownEnded: boolean = true;
+  countdownEnded: boolean = false;
   ngOnInit(): void {
-    // this.updateCountdown();
-    // this.countdown = setInterval(() => {
-    //   this.updateCountdown();
-    // }, 1000);
+    this.updateCountdown();
+    this.countdown = setInterval(() => {
+      this.updateCountdown();
+    }, 1000);
   }
 
   updateCountdown() {

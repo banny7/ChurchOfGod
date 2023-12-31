@@ -1,8 +1,9 @@
-<div class="tempLoader" *ngIf="!countdownEnded">
-  <img src="/assets/images/core/header/logo.png" alt="">
-  <!-- <h3>New Website Coming Soon</h3> -->
-  <p>New Website going live in</p>
-  <p>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ remainingSeconds }} seconds</p>
+<div *ngIf="!countdownEnded" class="tempLoader">
+  <div [@fadeInOut]>
+    <img src="/assets/images/core/header/logo.png" alt="">
+    <p>New Website going live in</p>
+    <p>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ remainingSeconds }} seconds</p>
+  </div>
 </div>
 <div class="Container" *ngIf="countdownEnded">
   <app-header></app-header>
