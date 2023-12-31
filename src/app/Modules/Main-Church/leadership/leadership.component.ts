@@ -45,7 +45,7 @@ export class LeadershipComponent implements OnInit {
     },
     {
       image: "ebez_joy", 
-      name: 'Ebez Joy',
+      name: 'Ebbase Joy',
       role: 'Worship'
     }, 
     {

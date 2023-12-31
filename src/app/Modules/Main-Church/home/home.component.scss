@@ -61,7 +61,7 @@ $page_width : 1300px;
             .wrapper {
                 padding: 0px 40px;
                 position: relative;
-
+                width: 100%;
                 .subContainer {
                     position: relative;
                     z-index: 10;
@@ -917,4 +917,7 @@ $page_width : 1300px;
     100% {
         left: 100%;
     }
+}
+#live-sermon{
+    width: 100%;
 }

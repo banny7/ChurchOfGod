@@ -10,7 +10,7 @@ import { SharedModule } from '../../../Shared/Shared.module';
   imports : [ SharedModule]
 })
 export class HomeComponent implements OnInit {
-
+  enableYoutubeVideo : boolean = false;
   constructor() { }
 
   ngOnInit() {
@@ -28,4 +28,13 @@ export class HomeComponent implements OnInit {
     // Return the rotation angle as a CSS transform
     return `rotate(${this.rotationAngle}deg)`;
   }
+  // enableLiveSermon(){
+  //   this.enableYoutubeVideo = !this.enableYoutubeVideo;
+  //   if(this.enableYoutubeVideo){
+  //     const videoIframe = document.querySelector('iframe') as HTMLIFrameElement;
+  //     if (videoIframe) {
+  //       videoIframe.src = 'https://www.youtube.com/watch?v=FhwO6u-xSFg?autoplay=1';
+  //     }
+  //   }
+  // }
 }
