@@ -14,6 +14,11 @@ export const routes: Routes = [
         component : HomeComponent
     },
     {
+        path : "",
+        pathMatch : "full",
+        redirectTo : ""
+    },
+    {
         path:"leadership",
         component:LeadershipComponent
     },

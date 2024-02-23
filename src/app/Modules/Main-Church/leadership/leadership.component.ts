@@ -18,11 +18,11 @@ export class LeadershipComponent implements OnInit {
       name: 'Joseph Cleetus'
     },
     {
-      image: "2",
+      image: "thomas_varghese",
       name: 'Thomas Varghese'
     },
     {
-      image: "20", 
+      image: "mariyamma_sam", 
       name: 'Mariyamma Sam',
       role: 'Worship'
     },
@@ -96,12 +96,12 @@ export class LeadershipComponent implements OnInit {
     },
     
     {
-      image: "20", 
+      image: "renny_joseph", 
       name: 'Renny Joseph',
       role: 'Ahavah Home'
     },
     {
-      image: "justin_john_2", 
+      image: "justin_john", 
       name: 'Justin John',
       role: 'Ahavah Home'
     },
@@ -164,18 +164,47 @@ export class LeadershipComponent implements OnInit {
       name: 'Savitha Bijoy',
       role: 'Ahavah Home'
     },
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
-   
-    
+    {
+      image : 'elsiamma_s',
+      name : "Elsiamma S",
+      role : "Ahavah Home"
+    },
+
+    {
+      image : 'biju',
+      name : "Biju",
+      role : "Ahavah Home"
+    },
+    {
+      image : 'shibu',
+      name : "Shibu",
+      role : "Ahavah Home"
+    },
+    {
+      image : 'sinil_s',
+      name : "Sinil S",
+      role : "Ahavah Home"
+    },
+    {
+      image : 'nisha_shibu',
+      name : "Nisha Shibu",
+      role : "Ahavah Home"
+    },
+    {
+      image : 'joyel_k_j',
+      name : "Joyel K J",
+      role : "Ahavah Media"
+    },
+    {
+      image : 'sneha_alex',
+      name : "Sneha Alex",
+      role : "Ahavah Media"
+    },
+    {
+      image : 'rinson_philip',
+      name : "Rinson Philip",
+      role : "Ahavah Home"
+    },
     
     
   ]

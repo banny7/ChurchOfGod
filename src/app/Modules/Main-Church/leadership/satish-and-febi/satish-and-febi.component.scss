@@ -39,10 +39,11 @@ $page_width : 1300px;
             font-family: $termina_font;
             font-weight: 200;
             line-height: 1.7;
-            i,b{
+            i,b, a{
                 font-family: $termina_font;
                 color : $blue;
                 font-weight: 400;
+                text-decoration: none;
             }
         }
     }
