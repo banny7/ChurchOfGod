@@ -14,8 +14,9 @@ import { Router } from '@angular/router';
 export class LeadershipComponent implements OnInit {
   pastors = [
     {
-      image: "1", 
-      name: 'Joseph Cleetus'
+      image: "sathish_pastor", 
+      name: 'Sathish Philip ',
+      role : "( Senior Pastor)"
     },
     {
       image: "thomas_varghese",
@@ -23,8 +24,11 @@ export class LeadershipComponent implements OnInit {
     },
     {
       image: "mariyamma_sam", 
-      name: 'Mariyamma Sam',
-      role: 'Worship'
+      name: 'Mariyamma Sam'
+    },
+    {
+      image: "1", 
+      name: 'Joseph Cleetus'
     },
   ]
   staffLists = [
@@ -34,9 +38,14 @@ export class LeadershipComponent implements OnInit {
       role: 'Worship'
     },
     {
-      image: "kesiya_babu", 
-      name: 'Kesiya Babu',
+      image: "ebez_joy", 
+      name: 'Ebbase Joy',
       role: 'Worship'
+    }, 
+    {
+      image : 'joyel_k_j',
+      name : "Joyel K J",
+      role : "Media"
     },
     {
       image: "anna_mathews", 
@@ -44,21 +53,16 @@ export class LeadershipComponent implements OnInit {
       role: 'Worship'
     },
     {
-      image: "ebez_joy", 
-      name: 'Ebbase Joy',
-      role: 'Worship'
-    }, 
+      image: "anna_saji",
+      name: 'Anna Saji',
+      role: 'Media'
+    },
+    
     {
       image: "aiden_bijoy", 
       name: 'Aiden Bijoy',
       role: 'Worship'
     },
-    {
-      image: "boaz_sam", 
-      name: 'Boaz Sam',
-      role: 'Media'
-    }, 
-    
     {
       image: "antony_philip", 
       name: 'Antony Philip',
@@ -70,47 +74,54 @@ export class LeadershipComponent implements OnInit {
       role: 'Media'
     },
     {
-      image: "anna_saji",
-      name: 'Anna Saji',
+      image: "boaz_sam", 
+      name: 'Boaz Sam',
       role: 'Media'
+    }, 
+    {
+      image: "kesiya_babu", 
+      name: 'Kesiya Babu',
+      role: 'Worship'
     },
+    
     {
       image: "shijo_john", 
       name: 'Shijo John',
       role: 'Media'
-    }, 
-    {
-      image: "sachin_roystone", 
-      name: 'Sachin Roystone',
-      role: 'Media'
-    }, 
-    {
-      image: "banny_b", 
-      name: 'Banny B',
-      role: 'Media'
     },
+    {
+      image: "justin_john", 
+      name: 'Justin John',
+      role: 'Ahavah Home'
+    }, 
+    {
+      image: "karishma_sharma", 
+      name: 'Karishma Sharma',
+      role: 'Ahavah Home'
+    }, 
+    
     {
       image: "24", 
       name: 'Sam Juby',
       role: 'Media'
     },
+    {
+      image: "annie_babu",
+      name: 'Annie Babu',
+      role: 'Ahavah Home'
+    }, 
+     {
+      image: "savitha_bijoy", 
+      name: 'Savitha Bijoy',
+      role: 'Ahavah Home'
+    },
+    
     
     {
       image: "renny_joseph", 
       name: 'Renny Joseph',
       role: 'Ahavah Home'
     },
-    {
-      image: "justin_john", 
-      name: 'Justin John',
-      role: 'Ahavah Home'
-    },
-    
-    {
-      image: "annie_babu",
-      name: 'Annie Babu',
-      role: 'Ahavah Home'
-    }, 
      {
       image: "sona_melvin",
       name: 'Sona Melvin',
@@ -121,13 +132,18 @@ export class LeadershipComponent implements OnInit {
       role: 'Ahavah Home'
     }, 
    
+    {
+      image : 'elsiamma_s',
+      name : "Elsiamma S",
+      role : "Ahavah Home"
+    },
+    
     
     {
-      image: "karishma_sharma", 
-      name: 'Karishma Sharma',
-      role: 'Ahavah Home'
+      image: "sachin_roystone", 
+      name: 'Sachin Roystone',
+      role: 'Media'
     }, 
-    
     {
       image: "sarah_sachin", 
       name: 'Sarah Sachin',
@@ -159,25 +175,16 @@ export class LeadershipComponent implements OnInit {
       name: 'John K Mathew',
       role: 'Ahavah Home'
     },
-    {
-      image: "savitha_bijoy", 
-      name: 'Savitha Bijoy',
-      role: 'Ahavah Home'
+   {
+      image: "banny_b", 
+      name: 'Banny B',
+      role: 'Media'
     },
-    {
-      image : 'elsiamma_s',
-      name : "Elsiamma S",
-      role : "Ahavah Home"
-    },
+    
 
     {
       image : 'biju',
       name : "Biju",
-      role : "Ahavah Home"
-    },
-    {
-      image : 'shibu',
-      name : "Shibu",
       role : "Ahavah Home"
     },
     {
@@ -191,10 +198,13 @@ export class LeadershipComponent implements OnInit {
       role : "Ahavah Home"
     },
     {
-      image : 'joyel_k_j',
-      name : "Joyel K J",
-      role : "Ahavah Media"
+      image : 'shibu',
+      name : "Shibu",
+      role : "Ahavah Home"
     },
+    
+    
+    
     {
       image : 'sneha_alex',
       name : "Sneha Alex",
