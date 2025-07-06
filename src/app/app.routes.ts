@@ -7,6 +7,8 @@ import { WhatWeBelieveComponent } from './Modules/Main-Church/what-we-believe/wh
 import { OurStoryComponent } from './Modules/Main-Church/our-story/our-story.component';
 import { FounderComponent } from './Modules/Main-Church/leadership/founder/founder.component';
 import { SatishAndFebiComponent } from './Modules/Main-Church/leadership/satish-and-febi/satish-and-febi.component';
+import { VisitComponent } from './Modules/Main-Church/visit/visit.component';
+import { SermonsComponent } from './Modules/Media/sermons/sermons.component';
 
 export const routes: Routes = [
     {
@@ -46,5 +48,14 @@ export const routes: Routes = [
     {
         path : 'sathish-and-feby',
         component : SatishAndFebiComponent
+    },
+    {
+        path : 'visit-us',
+        component :VisitComponent
+    },
+    {
+        path : 'sermons',
+        component : SermonsComponent
     }
+    
 ];

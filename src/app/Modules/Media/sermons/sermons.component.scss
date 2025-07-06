@@ -1,0 +1,21 @@
+.sermonListWrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    .sermons{
+        border: 1px solid #ededed;
+        background-color: #fff;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        margin: 0.75% !important;
+        padding-bottom: 19px !important;
+        border-radius: 6px;
+        .sermonTitle{
+            color: #707070 !important;
+           
+       
+        
+        
+        }
+    }
+}
