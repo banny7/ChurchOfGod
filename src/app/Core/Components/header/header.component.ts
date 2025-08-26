@@ -15,10 +15,10 @@ export class HeaderComponent implements OnInit {
       title : "What we Believe",
       name : "/what-we-believe"
     },
-    {
-      title : "Visit",
-      name : "/visit-us"
-    },
+    // {
+    //   title : "Visit",
+    //   name : "/visit-us"
+    // },
     {
       title : "Leadership",
       name : "/leadership"
@@ -31,10 +31,10 @@ export class HeaderComponent implements OnInit {
       title : "Connect",
       name : "/connect"
     },
-    {
-      title : "Sermons",
-      name : "/sermons"
-    }
+    // {
+    //   title : "Sermons",
+    //   name : "/sermons"
+    // }
 ]
 isMenuOpen = false;
 windowWidth: any;
